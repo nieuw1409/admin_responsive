@@ -1,0 +1,44 @@
+Making the best of Header Tags SEO:
+
+Installing Header Tags SEO will help the ratings for your category and product pages
+out of the box, just by installing it. This is because the installation pre-fills 
+the tags for these items, if you ran fill_tags, with your products name, which in 
+turn causes those pages to be setup correctly for the search engines. This, by itself, 
+is enough to improve the position in the SERP's (search engine result pages) for 
+those pages and is the reason that many shop owners find their product pages listed 
+before their home page.
+
+So how do you make Header Tags SEO work for the other pages of your site? Here is a
+brief overview of what you need to do to properly set up a page of your site.
+
+First, you need to know what your keyword or key phase is (referenced as KW hereafter).
+The whole page should be built around your KW. The KW should be picked by researching 
+how many searches have been done on it. 
+
+Once you have selected two or three KW's, it is time to set up the title and meta tags.
+A common mistake by many shop owners is that they make the title of the page the same 
+as the domain name. Unless the domain name was chosen with the KW in mind, this is 
+almost always a mistake. In admin->Header Tags->Page Control, find the section named 
+index. Change the Title entry to start with your KW. 
+
+The meta description tag should also start with your keyword when possible. I say when 
+possible because this description may end up in a search engine listing so you want it 
+to sound enticing to people viewing it. Don't just throw a few words together with the 
+intent of improving your odds with the search engines. What people read will convince 
+them much more than a few places different in the listings.
+
+The meta keyword tag needs to include your two or three keywords, starting with your main
+one. Here is another spot where beginners, and some old-timers, make a common mistake. The 
+HTML coding standard allows you to place many keywords in this tag. However, that does not 
+mean you should do it. In fact, for each page of your web site, you should not have more 
+than two or three words in this tag. Of course, the words for the different pages should 
+also be different. Also note that each keyword or phase is comma separated.
+
+After you have finished with all of the above, your home page should have a title that begins
+with your KW, your meta description tag should start with your KW or at least contain it in
+the wording, your meta keywords should start with your KW and not contain more than three
+comma separated words or phases. You will need to do this on each page you want to have listed
+in the search engine result pages. The more you have listed, the better. But remember that 
+each page has to be unique so that means that the above has to be done for each page, 
+including picking out new KW's. Doing this is not quick work but it will pay off with a better 
+position for your shop.

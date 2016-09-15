@@ -1,0 +1,33 @@
+This file explains the purpose of the various meta tags options
+available with Header Tags SEO. These explanations may not be
+complete. For more information, search them on the Internet. To alter
+any of these that have various options, the includes/header_tags.php
+file will need to be edited.
+
+google: Controls how google searches your site. The default setting
+        is All, which means that google will index all pages of your
+        site as they are found and follow all links on those pages.
+        This is the desired setting. But some sites may want to 
+        alter these. 
+language: Tells the search engines which language the site is intended for.
+
+noodp: If your site is listed on DMoz, a major directory site, then they have
+       created their own description of your site most likely. Sometimes, the
+       description they use is not the best for your site. This options allows
+       you to override that description so that your own is used. This tag
+       works for all major search engines.       
+
+noydir: Same as the above but only works for Yahoo.
+
+revisit: Tells the search engines when they can revisit the site. Rarely used
+         anymore due to how frequently the search engines visit. They may not
+         pay attention to it. But if your bandwidth is limited, changing the
+         setting for this may help.
+         
+robots: Same as the google meta tag above but applies to all search engines.
+ 
+unspam: An attempt by unspam.com to prevent the search engines from harvesting 
+        email addresses. May not be heeded by all search engines. 
+        
+replyto: Lists your email address. This is not recommended for most sites but
+         is useful for some.

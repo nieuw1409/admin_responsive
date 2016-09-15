@@ -1,0 +1,1 @@
+<div class="container-fluid"><a href="<?php echo tep_href_link(FILENAME_DEFAULT) ; ?>"><?php echo tep_image(DIR_WS_IMAGES . STORE_LOGO, STORE_NAME) ; ?></a></div>

@@ -1,0 +1,27 @@
+<?php
+/*
+  $Id$
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2010 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+define('MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_TITLE', 'Google XML Sitemap admin');
+define('MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_LINKS', '(links openen in nieuw venster)');
+define('MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_DESCRIPTION', 'Google XML Sitemap updaten');
+define('MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_DATE', 'Laatst geupdate op');
+define('MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_UPDATE_NOW', 'Maak/Update de XML Sitemap bestanden nu');
+define('MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_PING', 'Ping Google (om te laten weten dat XML sitemap geupdate is)');
+define('MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_DOCS', 'Google XML Sitemap documentatie');
+
+
+  define('TITLE_MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_STATUS', _MODULES_ACTIVATE_STATUS . ' ' . MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_TITLE ) ;
+  define('DESCRIPTION_MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_STATUS', _MODULES_ACTIVATE_STATUS_DESCRIPTION ) ; 
+  
+  define('TITLE_MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_SORT_ORDER', _MODULES_SORT_ORDER . MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_TITLE ) ;
+  define('DESCRIPTION_MODULE_ADMIN_DASHBOARD_GOOGLE_SITEMAP_SORT_ORDER', _MODULES_SORT_ORDER_DESCRIPTION ) ;   
+?>

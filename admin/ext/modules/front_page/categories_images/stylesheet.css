@@ -1,0 +1,56 @@
+/*
+  $Id: stylesheet.css v1.0 20101112 Kymation $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2010 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+
+/*  Categories in the Categories Images box  */
+.imageBox {
+  width: 110px;  /* Width of each Category */
+  height: 140px;  /* Height of each Category */
+  padding: 5px 5px 5px 15px;  /* Padding between the category contents and the border */
+  border: 1px solid #182d5c;  /* Border around each Category -- See the User's Manual */
+  margin: 3px;  /* Margin between the Category border and other objects */
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 8pt;
+  background: #ffffff;  /* Background color of each Category */
+  float: left;  /* Don't change this */
+}
+
+.center {
+  text-align: center;
+}
+
+.module_contents {
+  padding: 5px 0 5px 0;
+  font-size: 9pt;
+  line-height: 1.2;
+}
+
+.category_link_top {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #2C78B4;
+}
+
+.category_link_sub {
+  font-weight: normal;
+  text-decoration: underline;
+  color: #2C78B4;
+  font-size: 8pt;
+}
+
+.spacer {
+  margin-top: 10px;
+}
+
+.link_column {
+  text-indent: -1em;
+  display: block;
+}

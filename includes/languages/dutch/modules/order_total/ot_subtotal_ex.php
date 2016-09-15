@@ -1,0 +1,21 @@
+<?php
+/*
+  $Id: ot_subtotal_ex.php,v 1.1 2002/04/03 23:09:49 hpdl Exp $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2002 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+  define('MODULE_ORDER_TOTAL_SUBTOTAL_EX_TITLE', 'Subtotaal Excl.');
+  define('MODULE_ORDER_TOTAL_SUBTOTAL_EX_DESCRIPTION', 'Subtotaal bestelling Excl.');
+  
+  define('TITLE_MODULE_ORDER_TOTAL_SUBTOTAL_EX_STATUS', _MODULES_ACTIVATE_STATUS . ' ' . MODULE_ORDER_TOTAL_SUBTOTAL_EX_TITLE ) ;
+  define('DESCRIPTION_MODULE_ORDER_TOTAL_SUBTOTAL_EX_STATUS', _MODULES_ACTIVATE_STATUS_DESCRIPTION ) ;  
+  
+  define('TITLE_MODULE_ORDER_TOTAL_SUBTOTAL_EX_SORT_ORDER', _MODULES_SORT_ORDER . MODULE_ORDER_TOTAL_SUBTOTAL_EX_TITLE ) ;
+  define('DESCRIPTION_MODULE_ORDER_TOTAL_SUBTOTAL_EX_SORT_ORDER', _MODULES_SORT_ORDER_DESCRIPTION ) ;
+?>

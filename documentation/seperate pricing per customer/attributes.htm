@@ -1,0 +1,17 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Attributes</title>
+<style type="text/css">
+p { font-family: Arial, Helvetica, sans-serif ; }
+li { font-family: Arial, Helvetica, sans-serif ; }
+</style>
+</head>
+<body>
+<p align="center"><img border="0" src="images/attribute_groups.gif" width="880" height="681" alt="products attributes for groups"></p>
+<p style="color:#ff0000;">SPPC enables attribute pricing for customer groups. The admin side is provided through a pop-up window (attributes_groups.php) that is reached through an extra button in the product attributes table at the bottom of admin/product_attributes.php. In the pop-up window the retail price and the group price for the attribute can be changed, as well as for which groups this attribute should be hidden.</p>
+<p style="color:#ff0000;">To add a price for a customer group other than retail make the changes and check the box under the heading "Insert" before saving (entering nothing in the input for Value Price will insert 0.0000). When a price for this customer group is already in the database there will be a checkbox visible under the heading "Delete". Check that box and click "save" if you want to remove the price for that customer group. After saving changes one or more times the number of saves will be shown in the top of the screen. You can close the window also with the "cancel" button.</p>
+<p style="color:#ff0000;">Code added to the class shopping_cart will prevent attributes hidden for the group to be added to the cart, for example when a page is saved as HTML locally, attributes edited and then the edited page submitted. Also when an attribute is hidden from a group but not from retail the hidden attributes will be stripped from the product. This might not be a valid product since the attribute(s) is/are removed, not replaced!</p>
+</body>
+</html>

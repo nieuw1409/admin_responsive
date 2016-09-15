@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>http://localhost/projects/responsive/sitemapcategories.xml</loc>
+    <lastmod>2016-09-08</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost/projects/responsive/sitemapproducts.xml</loc>
+    <lastmod>2016-09-08</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost/projects/responsive/sitemapmanufacturers.xml</loc>
+    <lastmod>2016-09-08</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost/projects/responsive/sitemapcategories_english.xml</loc>
+    <lastmod>2016-09-08</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost/projects/responsive/sitemapproducts_english.xml</loc>
+    <lastmod>2016-09-08</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>http://localhost/projects/responsive/sitemapmanufacturers_english.xml</loc>
+    <lastmod>2016-09-08</lastmod>
+  </sitemap>
+</sitemapindex>

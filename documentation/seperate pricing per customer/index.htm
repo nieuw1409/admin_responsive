@@ -1,0 +1,186 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Language" content="en-us">
+<title>Overview of SPPC 4.2.1</title>
+<style type="text/css">
+p { font-family: Arial, Helvetica, sans-serif ; }
+li { font-family: Arial, Helvetica, sans-serif ; }
+</style>
+</head>
+<body>
+<p align="center"><span style="color: #ff0000; font-weight: bold; font-style: italic;">Separate Pricing 4.2.1
+- What it Solves, What it Does &amp; How it Works</p>
+<p align="left" style="color: #ff0000;">What it Solves</p>
+<p>&nbsp; Separate Pricing was created to allow a website to
+have different pricing for the same products for different users. This is
+particularly useful for sites that need to <i>retail &amp; wholesale</i> the
+same products or for sites that have customers that get different pricing
+depending on their past volume of purchases.</p>
+<p>&nbsp; Because the stock osCommerce release doesn't
+support this scenario the site owner can only have <i>one pricing level</i> on
+their entire site. This creates some problems for businesses that need to <i>both</i>
+wholesale &amp; retail products because the site owner has to choose what
+pricing to display. For instance;</p>
+<ul>
+  <li>If he chooses <i>wholesale</i> pricing then everyone
+    on the Internet can see the discounted rate - and that's something that
+    wholesale account purchasers <b><i>don't like</i></b>. If a business's
+    wholesale customer knows that the whole world can see &amp; get <b><i>their</i>
+    </b>pricing then they usually won't do business with you <i>ever.<br>
+    </i><br>
+    </li>
+  <li>If the site owner chooses to display <i>retail</i>
+    pricing then a different problem occurs. If <i>wholesale </i>customers
+    come to your site then they will be put off by your 'high' prices.</li>
+</ul>
+<p><img border="0" src="images/plumbing-man-spanner.jpg" width="113" height="155" align="left"></p>
+<p><font face="Tahoma">&nbsp; </font><font face="Arial">As a real-world example, suppose you are selling
+plumbing supplies. <img border="0" src="images/pwd0766s.jpg" width="99" height="102" align="right"></p>
+<p>&nbsp; The general public should see the regular <i>retail</i>
+rate and contractors that deal with you in volume should see a lower
+<i>wholesale</i> price. This is what Separate Pricing was created to do - <i>display
+different prices for different people</i>.&nbsp;</p>
+<p>&nbsp;</p>
+<p style="color: #ff0000;">What it Does</p>
+<p>In addition, Separate Pricing allows you to do more then just show different pricing. Some of it's many features include:</p>
+<ul>
+  <li><b><a href="pricing_groups.htm" target="_blank">Multiple
+    Pricing Groups</a>.</b> You can create groups such as <i>Retail, Wholesale,
+    Volume Purchase Agreement </i>or whatever you like. <i><b>Retail is required</b></i>&nbsp;
+    and is installed by default, but you can create as many groups as you desire
+    with names of your choosing. After groups are created you can then <a href="pricing.htm" target="_blank">specify
+    pricing for existing or new products</a>. Additionally, you can <a href="attributes.htm" target="_blank">set group pricing for attributes</a> (plus hide them for one or more groups).<br>
+    <br>
+    </li>
+  <li><b><a href="taxes.htm" target="_blank">Taxes on a Per
+    Group Basis</a>.</b> You can edit a customer group and either enable or
+    disable tax for that group. In addition, you can can choose whether or not
+    to display the price with tax included - something that's useful for
+    European stores where law requires displayed prices to include tax plus (new in version 4.2) you can be specific which tax a customer group is exempt for. This is needed for example in Canada or when a tax (like VAT) is different for retail versus a company (say 20% for retail and 10% for a company). Then you can add both taxes to the product and edit the settings to make each group exempt for one of those taxes.<br>
+    <br>
+    </li>
+  <li><b><a href="specials.htm" target="_blank">Define Specials for different
+    groups</a>.</b> This
+    means you can have the same products on sale for different groups - with
+    different prices as you see fit.<br>
+    <br>
+    </li>
+  <li><b><a href="taxnumber.htm" target="_blank">Tax Number
+    field</a>.</b> When a customer creates an
+    account on your site they have the option of including a <i>tax number</i>.
+    If they enter a tax number then an email is sent to the site's administrator
+    letting him know that the account needs to be approved. Once the site admin
+    actually <i>verifies</i> that the customer is legitimate he can then move
+    the customer to whichever group the customer belongs in. The default for <i>all</i>
+    accounts is <i>Retail</i> and customers will only be able to see <i>retail</i>
+    pricing until they have been approved. In addition to the email, the
+    Customers section of the osC admin will show a red light next to any
+    accounts that need to be approved for a wholesale account.<br>
+    <br>
+    </li>
+  <li><b><a href="paymentshipping.htm" target="_blank">Payment, Shipping &amp; Order Total
+    Modules</a>.</b> <i>Existing</i>
+    Payment, Shipping modules, &amp; Order Total modules can be enabled or disabled on a customer
+    group basis or on an <a href="customerlevel.htm" target="_blank"> individual customer
+    level</a>. This is a very powerful
+    feature. Let's assume you have a customer that buys a lot of products from
+    you. They may <i>require</i> credit terms and refuse any other courier then
+    UPS. If that's the case then you can simply edit that particular customer
+    and only show a payment option of <i>credit terms</i> and also <i>only</i>
+    show a courier option of UPS - regardless of how many payment or shipping
+    modules you have installed. It should be noted that this contribution <i>does
+    not contain any payment or shipping modules</i> - this feature works with
+    whatever modules <i>you</i> have installed or the pre-existing ones that are
+    <i>enabled</i> in the stock osC release.<br>
+    <br>
+    </li>
+  <li><b><a href="login.htm" target="_blank">Administrator
+    Log-On</a>. </b>The site's administrator
+    account has the ability to log-in as a member of <i>any</i> group. This
+    saves you from having to create several accounts for testing the customer
+    groups.<br>
+    <br>
+    </li>
+  <li><b><a href="customers.htm" target="_blank">Cosmetic/Appearance
+    Functions</a>.</b> In the osC Admin
+    you can sort customers by any field such as company name, last name, first
+    name, customer group etc. In addition, the Customers section will show how
+    many clients you have and what groups they belong to.<br />
+    In the orders page the customer group <a href="orders.htm" target="_blank">will be shown</a> (if you choose to add that to the page)</li>
+    <li><b>Send <a href="newsletter.htm" target="_blank">Newsletters</a> or <a href="mail.htm"  target="_blank">E-mail</a> to certain Customer Groups only</b> (optional install.)
+</ul>
+<p style="color: #ff0000;">How It Works</p>
+<p>&nbsp; The first thing you will want to do after
+installation is to create customer groups. These groups are created by going
+into your site's <i> osC Admin</i> and selecting the <i> Customers</i> link. After that you will
+see a link called <i> Customers Groups</i>. Click on that and you will see the default
+Retail Group. Select <i> Insert</i> to create a new group. At this point you can choose
+the name, whether to display the price with tax included, whether the group
+should be taxed and also define which Payment &amp; Shipping methods will apply
+to that group. Create as many groups as are required for your business.</p>
+<p>&nbsp; The next step will be to edit your existing
+products and enter the new pricing for each product. You do this in the
+conventional osC manner, by going into the<i> osC Admin</i> and clicking on <i> Catalog</i> and
+editing each product. Once you edit a product you will see a field for each
+customer group you created. Enter the discounted pricing you desire in each
+field.</p>
+<p>&nbsp; After that you may want to define specials. This is
+done in the standard osC manner, by going into <i> osC Admin</i>, clicking on <i> Catalog</i>
+and then <i>Specials</i>. At this point you can create new specials by choosing the
+<i> New
+Product</i> button and then selecting the product from the drop-down list. You then
+define what group the special applies to, the price and also the date it should
+be in affect (if desired). To make the same special for another group just
+follow the same steps and choose a different group and price.</p>
+<p>&nbsp; To test your newly entered prices just go to your
+website and log in as the defined <i> Site Administrator</i>. The Site Administrator is
+defined by entering their email address into the <span style="color: #0000FF;">catalog\includes\languages\english\login.php
+</span> file. If you do a search of that file for the word <b>root</b>
+you will find the specific area to enter the address. Once you go to log in you will be presented with a screen asking which group you want to log in under. From that point the site
+behaves exactly as if you were a member of that group.</p>
+<p>&nbsp; From an operational perspective you can just move
+any of your existing customers into whatever groups you have defined. If a new
+user registers with a tax number then the Site Administrator will receive an
+email notifying them that the account needs to be approved. As well, a <a href="redlight.htm" target="_blank"> red light
+will be set next to that customer</a> in the osC Admin's customer list. You then
+enter the <i> osC Admin</i>, highlight the customer and then select <i>Edit</i>. You can then
+assign which group the customer belongs in (whether or not they have been
+approved for a wholesale account) and also turn off the red light notification
+next to their name. From that point on, when that customer logs into your site
+they will see the pricing for the group that you assigned them to (wholesale or
+what have you).</p>
+<p>&nbsp; <i>It should be noted that customers will not see
+updated pricing unless they log off and log back in or if their session expires.</i></p>
+<p style="color: #ff0000;">General Installation Information</p>
+<p>The Separate Pricing 4.x contribution comes with extensive
+documentation to make installation as easy as possible. It is a large
+contribution so the easiest way to install it is on a new site with no
+modifications. In that case you can simply upload the included files and run the
+SQL install script.</p>
+<p>If you have a heavily modified site then you will have to
+perform a manual installation. The easiest way to do this is with a file <a href="http://www.compareandmerge.com/" target="_blank">compare
+&amp; merge utility</a>. If you don't have one you can use the one referenced
+here as they have a free trial that lasts for 50 files, which is enough to
+accomplish the task.</p>
+<p>If your interest is in doing a <i>truly</i> manual
+installation with a Text Editor then<i> tested </i>file by file documentation is
+included with the contribution.</p>
+<p style="color: #ff0000;">Support</p>
+<p>Support for this contribution can be found in the <a href="http://forums.oscommerce.com/index.php?showtopic=53436&amp;view=getlastpost" target="_blank">Separate
+Price Contribution Support Thread</a> at the osCommerce website. Please note
+that support for this contribution is provided on a <i>limited</i> basis. It's <i>not</i>
+the author(s) responsibility to ensure the contribution works with other's that
+are installed nor to trouble shoot installation issues. </p>
+<p>A <i>great deal </i>of testing time has been spent on the
+documentation to ensure that it is <i> accurate</i> and <i> reliable</i> so conflicts with other
+contributions <i>should be</i> the only potential issue that may arise. In that
+case, if courtesy support is not forthcoming, you might find it worthwhile to
+consult a dedicated PHP programmer. </p>
+<p><i>While every effort has been made to ensure this
+contribution is as bug free as possible, as with all osCommerce contributions,
+they are installed at your own risk. </i></p>
+<p>&nbsp;</p>
+</body>
+
+</html>

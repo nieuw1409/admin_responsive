@@ -1,0 +1,107 @@
+Operating Instructions:
+
+1) Once Header Tags SEO is installed, go to admin->Header Tags SEO->Fill Tags,
+   select the Fill All option in all three columns on that page and click
+   Update. This option will fill in all of the titles and meta tags for all 
+   categories, manufacturers and products. If you already have tags set up that
+   you don't want overwritten then you should select the Fill Empty option instead.
+   
+2) Go to admin->Header Tags SEO->Page Control. You will see a Default section at
+   the right of the page with osCommerce related text in the three string boxes.
+   This section contains text that will be used on pages that do not have a 
+   specific page added for it but does have Header Tags code installed in the file. 
+   Change the strings to match your site. Here is a brief guide as to what should 
+   be entered:
+   
+   Title: List your main keywords as
+    Keyword1 - Keyword2 - Keyword3
+
+   Description: A human readable sentence using your main keywords like
+    We sell keyword1, keyword2 and keyword3.
+
+   Keywords: A list of your keywords as
+    Keyword1, Keyword2, Keyword3  
+    
+   Logo Text: The same as or similar to the above Description. This text will 
+   appear in the rollover text of the logo, unless overridden by the individual
+   page settings. 
+
+   Extra Logo Text: At the end of the box for the logo in Page Control is a radio
+   button. Clicking on that will open a dialog where extra text can be entered.
+   That is meant to allow setting the alt text for other images in the logo. You 
+   will need to edit the code for those extra images using the same instructions
+   as given for the main logo text in includes/header.php. Just be sure to change
+   the code to use the right field. So instead of using $header_tags_array['logo_text'],
+   you would use $header_tags_array['logo_text_1'].
+
+   Note that the order of the keywords should stay the same in all of the above.
+   
+3) On the left side, there is a dropdown for all of the available pages. An available
+   page is one that has Header Tags code in the <head> section, which happens
+   during the installation. The entry in the list named index.php contains the 
+   title and meta tags for the home page. Do the same for it, as above for the 
+   default settings but make this information specific to your home page. This 
+   should be setup for each page you want unique tags on. The options should also
+   be set (see below). 
+   
+4) Go to admin->catalog, click on a category and then on edit. At the bottom of 
+   the edit section to the right, you will see a large box for Categories Description. 
+   The text you enter here will appear under the title on the category page for 
+   this category. This is useful for your customers but is also good for the search
+   engines, as long as the text contains mention of the keyword for that page 
+   (which is usually the category name).
+   
+5) Go to admin->Catalog->Manufacturers and do the same as in step 4.    
+
+6) Go to admin->Configuration->Header Tags SEO and setup the various options to
+   your liking.
+   
+7) Set the options. When you go to admin->Header Tags SEO->Page Control and select
+   a page to edit, you will see a number of options. They are described here. It
+   is important to note that it is possible to turn off all options for a page.
+   That will probably break your shop and should not be done.
+   
+   Default Title: If checked, the title entered in the default section on the 
+   right will be added to the title of this page.  	 	
+	
+   Default Description: If checked, the description entered in the default section 
+   on the right will be added to the description of this page.
+    		
+   Default Keywords: If checked, the keywords entered in the default section on 
+   the right will be added to the keywords of this page.	
+	
+   Default Logo: If checked, the logo text entered in the default section on the 
+   right will be added to the logo text of this page (see above note in step 2). 		
+   
+   Category: If checked, the applicable category title will be added to the title,
+   description, keywords and logo text for this page. Not all pages will be able
+   to display a category so if this option is set for such a page, it will just
+   be ignored. 		
+	
+   Manufacturer: If checked, the applicable manufacturer title will be added to 
+   the title, description, keywords and logo text for this page. Not all pages 
+   will be able to display a manufacturer so if this option is set for such a 
+   page, it will just be ignored. 		
+			
+   Product: If checked, the applicable product title will be added to the title,
+   description, keywords and logo text for this page. Not all pages will be able
+   to display a product so if this option is set for such a page, it will just
+   be ignored. 		
+
+   Root: If checked, the text in the title, description, meta tags and logo text
+   boxes for this page will be added to those items for the page. The root is
+   considered the basic text for the page. It is not required but should be 
+   checked for the index.php page or the title may not appear there. 
+   
+8) Set the Sort Order. For each of the above options, there is a box next to the 
+   checkbox. This is for setting the sort order of the items. If both the category
+   and manufacturer checkboxes are checked on the product_info.php page and their
+   sort orders are 3 and 1, respectively, then the manufacturer title will
+   be shown before the category title. if the Product checkbox is also set and 
+   its sort order is 2, then the products title will appear between the manufacturer
+   and category titles.         
+   
+That's basically it. Go to your shop and click around. If you see something that 
+is not to your liking, it can be edited in admin.  
+    
+            

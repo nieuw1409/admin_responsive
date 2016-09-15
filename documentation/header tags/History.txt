@@ -1,0 +1,656 @@
+		Header Tags SEO v3.3.1
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 31 December 2013
+Forum Support: http://forums.oscommerce.com/topic/298099-header-tags-seo
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added an option to show short category descriptions on the product listing page.
+-> Added advanced_search_result.php to the exclude list.
+-> Added s character counter for the title and description in Page Control since google is paying more attention to these lately - may not work correctly for multi-language shops.
+-> Added OG meta tags code with on/off option.
+-> Added Twitter Card code.
+-> Added keyword highlighter for the products page.
+-> Added self-closing to the meta tags for 2.3.
+-> Added code to fill tags to scroll to the bottom if errors are found.
+-> Added code to fill tags to show the name of the language for errors.
+-> Added option to bypass file checking when adding files in admin - needed for some of the templates.
+-> Added a cron file to update categories, manufacturers and products automatically. Useful for sites that use feed updates.
+-> Added a breadcrumb field so that text can be controlled separately.
+-> Added the product review info page to application_top so its breadcrumb is displayed with the Header Tags SEO text.
+-> Added an alternate name field for categories, manufacturers and products to display on those pages.
+-> Added a url field for the categories, manufacturers and products so the url text can be controlled (requires Ultimate SEO V 2.2d).
+-> Added sub page text, currently viewing and social icons code to product review pages.
+-> Added code to recreate the pseudo code in the includes/header_tags.php file when that file is replaced.
+-> Added a social infobox so the social icons can appear on every page.
+-> Added a new color to the keyword section in admin to identify assigned keywords.
+-> Added css class for Currently Viewing.
+-> Added home page text code so additional text can be entered on the home page.
+-> Added pagination code to the keywords section.
+-> Changed code so it is now compatible with SEO 5.
+-> Changed breadcrumb code so the product model is included in the breadcrumb if that option is enabled in Page Control.
+-> Changed the google plus1 social icon code to display correctly.
+-> Changed popup_images to popup_image in admin/includes/header_tags.php - found my member Rainer.
+-> Changed canonical code to remove language.
+-> Changed Fill Tags radio selectors so the name, not just the button, enables the option.
+-> Changed Fill Tags so it checks the languages in use and only displays the All option if there is more than one.
+-> Changed "See more" in the product listing pages to "See more XXX" where XXX is the product name.
+-> Changed keyword code in admin so the product ID of an existing assigned word can be changed.
+-> Changed install and update database files to work with any oscommerce vrsion without displaing failures.
+-> Corrected the instructions in headertags_seo_update.php as found by member chemist4.
+-> Corrected several, minor, html-type coding mistakes.
+-> Fixed problem with adding new pages that would sometimes cause an out of sync condition with the DB and file.
+-> Fixed problem with adding new pages that used hypens in the names.
+-> Fixed problem with adding pseduo pages when the base file was not present.
+-> Fixed problem with silo infobox where it would fail on an empty list as reported by member Mort-lemur.
+-> Improved filename checking to prevent failures on files in the root that are not proper oscommerce files.
+-> Improved coding for adding new pages that will speed that up - important for large sites.
+-> Included a screenshot for Page Control that may help explain its usage better.
+-> Minified the stylesheet.
+-> Moved the Header Tags SEO display code for the products edit page into its own module and rewrote the code to display better.
+-> Moved Social bookmarks to after currently viewiing and sub text on the produt page.
+-> Removed ekstreme and furl social bookmarks since they no longer exist.
+-> Replaced primary key with indexes in the header tags tables
+-> Removed the header_tags_seo_convert.php file from this package - no longer needed.
+-> Test Routine - Added code to check for database update file.
+-> Test Routine - Fixed missing database problems as reported by member Mort-lemur (2.3.3.4 only).
+
+___________________________________________________________________________
+		Header Tags SEO v3.3.0
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 04 July 2013
+Forum Support: http://forums.oscommerce.com/topic/298099-header-tags-seo
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added code to check for manufacturers page - failed in some 2.3 shops
+-> Added images code for pInterest in social bookmark code.
+-> Added options descriptions for the new options in the options.txt file.
+-> Applied code fixes and WC3 changes provided by altoid (Steve).
+-> Changed datatype for many database fields from LONGTEXT to TEXT - saves 2 bytes per category, manufacturer and product record.
+-> Changed datatype for products meta description to a maximum length of 160 since that is what the search engines are using now.
+-> Changed canonical code to remove cpath and man id from product urls
+-> Corrected code in the social bookmark code to remove W3C errors.
+-> Correct instructions in the update file for converting the sizes of the database fields
+-> Removed extra slash in url's in social bookmark code - found by Fimble (Nic)
+
+___________________________________________________________________________
+		Header Tags SEO v3.2.9
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 30 September 2012 
+Forum Support: http://forums.oscommerce.com/topic/298099-header-tags-seo
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added code to strip html tags when the auto fill listing option is used
+-> Added pinterest to the social bookmarks
+-> Added code to advanced_search_result.php to ignore quotes if that contribution is installed.
+-> Changed code for the footer tag cloud to ignore urls that are not complete.
+-> Changed error code display in admin/includes/functions/header_tags.php to better display the open failure, if needed.
+-> Corrected code in the included includes/template_top.php file for 2.3
+-> Corrected install instructions for Install_Catalog.txt (missing database define).
+-> Corrected code in includes/header_tags.php to create the correct canonical tag for products when language is in the url.
+-> Corrected code in includes/functions/header_tags.php for the manufacturers section.
+-> Corrected code in includes/functions/header_tags.php that would cause a failure if a search was done on a work with an apostrophe.
+
+___________________________________________________________________________
+		Header Tags SEO v3.2.8
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 29 January 2012 
+Forum Support: http://forums.oscommerce.com/topic/298099-header-tags-seo
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Changed preg to @preg in admin/functions/headertags_seo_position_google to hide result for some installations.
+-> Corrected the code in the tag cloud/search code to record not found words and words with status of 0 correctly.
+-> Corrected update install instructions.
+-> Corrected social bookmark code for the home page.
+-> Removed extra div in includes/header.php page top code.
+
+___________________________________________________________________________
+		Header Tags SEO v3.2.7
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 2 January 2012 
+Forum Support: http://forums.oscommerce.com/topic/298099-header-tags-seo
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added google plusone code to the social bookmarks.
+-> Added images of Page Control to the contribution package to help understand it better.
+-> Added option to display text on the product listing page.
+-> Added option to display additional text on the product page.
+-> Added option to control showing the currently viewing link.
+-> Added option to display Header Tags title at top of each page.
+-> Added option to store keywords for use with other parts of Header Tags.
+-> Added social bookmarks for Article Manager pages (requires Article Manager to be installed). (My thanks to member JohnAtYM for his sugestion and code).
+-> Added social bookmarks for Information Pages pages (requires Information Pages to be installed).
+-> Added social bookmarks for Page Manager pages (requires Page manager to be installed).
+-> Added Tag Cloud code.
+-> Changed Fill Tags code to allow it to work for large databases.
+-> Changed View Result code so it now recognizes pseudo pages.
+-> Changed many database calls to be more secure.
+-> Changed how canonical code worked for the category pages since it was failing for some servers.
+-> Corrected xhtml mistakes in the <head> changes for 2.3 shops.
+-> Corrected the Install_Catalog.txt insructions for 2.3 shops.
+-> Corrected mistake in includes/functions/header_tags.php introduced in V 3.2.4 that prevented categories from being appended to the product page.
+-> Created an update install file that will make future updates easier.
+-> Created a new section in admin for handling keywords, including checking their position on google and adding them to the search results on the shop side.
+-> Fixed code in Page Control so a mising sort order entry causes a failure and doesn't allow the change.
+-> Fixed gzip cache so it updates correctly.
+-> Moved css to an external stylesheet.
+-> Moved the fill tags instructions to a popup file.
+-> Removed the deprecated type argument from the mysql files.
+-> Removed the mysql phpmyadmin-type install file from the contribution.
+-> Removed the option to use an html editor on the products meta tag description.
+-> Removed duplicate clean_html files.
+-> Removed the MS2 files.
+-> Removed all non-English language files.
+
+___________________________________________________________________________
+		Header Tags SEO v3.2.6
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 20 June 2011 
+Forum Support: http://forums.oscommerce.com/topic/298099-header-tags-seo
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added cache handling code to add a pseudo page code
+-> Added missing stylesheet.css file to the 2.3 files
+-> Changed code in includes/functions/header_tags.php to catch an occassional error
+-> Changed code in admin/categories.php for fckeditor fix as supplied by member goring_gap
+-> Changed names in includes/boxes/headertags.php (pre 2.3 only) since they were causing conflicts with some shops
+-> Changed headertags_seo_install.php so that languages are properly handled on installation
+-> Corrected the install instructions for changes to the manufacturers file
+-> Fixed code in fill tags to handle languages properly
+-> Removed duplicate header tags files from the shop-specific catalog directories
+-> Updated admin/categories.php and admin/includes/languages/english/categories.php from 2.3 to 2.3.1
+
+___________________________________________________________________________
+		Header Tags SEO v3.2.5
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 27 November 2010 
+Forum Support: http://forums.oscommerce.com/topic/298099-header-tags-seo
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Changed code in column file for determining page
+-> Corrected mistakes in the headertags_seo.sql and headertags_seo_update.sql files
+-> Fixed problem of files missing in Page Control for some languages
+-> Fixed problem of spacing on product info page due to currently viewing
+-> Moved functions previously in admin to their own file to simplify installation
+-> Added Version Checker files back into the package
+-> Added install instructions and files for oscommerce 2.3
+-> Fixed a login mistake in header_tags_test
+___________________________________________________________________________
+		Header Tags SEO v3.2.4
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 17 October 2010 
+Forum Support: http://forums.oscommerce.com/topic/298099-header-tags-seo
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added requirement note that Search Engine Friendly setting must be off
+-> Added social bookmark icon for stumbleupon
+-> Added option to include the model number in product pages title and tags
+-> Added code to prevent slashes from being added when using the generic override option in Fill Tags
+-> Added a language option to Fill Tags
+-> Changed canonical code so duplicate slashes are removed for the home page
+-> Fixed includes/functions/header_tags.php so that the manufacturers name are shown on the product page if the option is set
+-> Fixed code in Fill Tags that prevented the description and/or keywords from being filled with the Fill Empty option
+-> Fixed coding mistakes in Fill Tags that prevented cache from being cleared
+-> Fixed problem with FCKEditor not working with categories description (a workaround)
+-> Made various, minor, appearance changes
+-> Removed troubleshooting statement from admin/header_tags_seo.php
+___________________________________________________________________________
+		Header Tags SEO v3.2.3
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 06 June 2010
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added cache option
+-> Added missing code for pseudo pages in admin
+-> Added missing type cast for $languages_id and moved meta tag in includes/header_tags.php (found by member RusNN)
+-> Added missing code for canonical tag in the test function
+-> Added code to display invalid page messages with the message stack instead of at the top of the page
+-> Added option in test section to dynamically check a page to see if it is working
+-> Added option in test section to check for invalid filenames
+-> Added option in test section to check for missing pseudo entries
+-> Changed code in admin/includes/functions/header_tags.php to prevent conflicts with other contributions
+-> Changed code in admin/includes/functions/header_tags.php to cast int so it works with php 5.3
+-> Changed code in test function so errors for duplicate titles and tags link to the product
+-> Changed code in test function to better display language errors
+-> Changed code in fill tags so errors for missing values link to the category, manufacturer or product
+-> Changed HTML Editor option so one of the three most popular editors can be selected
+-> Changed code in includes/functions/header_tags.php to prevent implode error when tags are empty
+-> Fixed coding mistake in includes/boxes/header_tags.php
+-> Fixed coding mistake where the canonical meta setting wasn't handled correctly
+-> Fixed canonical code so that meta tag works correctly
+-> Fixed coding mistake in test function that failed to show items with missing names, titles or tags
+-> Fixed mistakes in the install and uninstall database files
+___________________________________________________________________________
+		Header Tags SEO v3.2.2
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 20 March 2010
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Corrected mistakes in the database files
+-> Fixed STRICT errors on shop side 
+-> Removed admin/application_top.php file from all directories - shouldn't have been there
+___________________________________________________________________________
+		Header Tags SEO v3.2.1
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 10 March 2010
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Fixed mistakes in previous upload 
+-> Fixed coding error in admin/headertags_seo.php that prevented updates to the correct languages
+-> Fixed remaining STRICT coding problems
+___________________________________________________________________________
+		Header Tags SEO v3.2.0
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 08 March 2010
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Fixed mistakes in previous upload 
+___________________________________________________________________________
+		Header Tags SEO v3.1.9
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 05 March 2010
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added version checking code to the Page Control page so it can be known when a new version is
+    available. There is an option to leave this on all of the time or to checkit manually. You'll
+    need to upload two files from the version tracking contribution for this to work:
+    http://addons.oscommerce.com/info/7148
+-> Added missing declaration in includes/modules/header_tags_social_bookmarks.php.
+-> Added missing sort order fields to database.
+-> Added additional STS code to handle product_info template, if used.
+-> Added a readme file with basic startup instructions that will, hopefully, address many common questions.
+-> Changed code for categories.php that caused HTML editors to fail in IE.
+-> Changed canonical code so index.php is removed from the home page url.
+-> Changed code for social bookmarking code (thanks to theintoy for the suggestions and code).
+-> Fixed coding mistake in admin/includes/functions/header_tags.php regarding manufacturers.
+-> Fixed login mistake in admin/headertags_seo.test.php that was not checking for BTS templates correctly. 
+-> Fixed messagestack error in admin/header_tags_seo.php.
+-> Fixed problem with View Results not always working.
+-> Rewrote code that uses ereg deprecated calls. 
+___________________________________________________________________________
+		Header Tags SEO v3.1.8
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 12 October 2009
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added some more code to Fill Tags to show what was changed.
+-> Added silo option. See admin->Header Tags SEO->Silo Control for details.
+-> Fixed social bookmark code to prevent SID from being added to the url 
+    (pointed out by Carl (theintoy). Also added code to include the 
+    category name in the url for category pages.
+-> Removed breadcrumb code from index.php in RC2 (found by gemcom).
+___________________________________________________________________________
+		Header Tags SEO v3.1.7
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 06 September 2009
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added a canonical meta tag option in Page Control to handle all pages not already handled
+-> Added error display code to Fill Tags so missing database items are more easily found
+-> Changed the default text that gets added at installation to try avoid all the confusion it creates
+-> Fixed mistakes from previous release regarding the tep-hide_sessions function
+-> Fixed mistake in the code for the <head> section changes
+-> Moved language sensitive text from the Fill Tags file to the language file
+___________________________________________________________________________
+		Header Tags SEO v3.1.6
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 13 August 2009
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added code to includes/header_tags.php to automatically set the language for the language meta tag.
+-> Added stylesheet.css with pre-installed to the files in the contribution.
+-> Added code to check for template for adding pseudo page for BTS AND STS shops
+-> Added a number of popular social bookmark icons
+-> Added tep_hide_session function to prevent logout in test function
+-> Added missing language code to includes/application_top.php (found by Alexander Maringer)
+-> Added a common questions section to the test page
+-> Fixed delete code in test function to work with all servers
+-> Fixed duplicate name problem in the social bookmark module.
+-> Fixed an html typo in the the admin/headertags_seo.php file
+-> Corrected instructions in Install_Admin.txt to match actual files (found by hewnry jiang)
+-> Changed code in social bookmark module to simplify
+-> Removed the xhtml formatting in includes/header_tags.php
+
+___________________________________________________________________________
+            Header Tags SEO v3.1.5
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 04 June 2009
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Corrected mistakes in the sql install files.
+-> Corrected mistake in includes/functions/header_tags.php.
+-> Added code to allow the logo text to work in STS shops.
+___________________________________________________________________________
+		Header Tags SEO v3.1.4
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 17 May 2009
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Corrected mistakes in includes/functions/headertags.php.
+-> Corrected mistake in admin/categories.php regarding TinyMCE for products.
+-> Corrected mistake in admin/header_tags_fill_tags.php as pointed out by Paul (pbor1234).
+-> Corrected some html coding errors in admin/headertags_seo.php.
+-> Added the version number to the title in page control. This may not be kept up with 
+    but it will at least show a minimum version.
+-> Added code to allow for extra logo text since many sites have more than one image in
+    the header.
+-> Removed the update sql files since they are not longer useful.
+___________________________________________________________________________
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 25 April 2009
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added a category list in fill tags so the fill option can be performed
+   on specific categories.
+-> Added option to test function to only show limit messages if asked.
+-> Added option to admin->Configuration->Header Tags SEO that allows
+   the parent category names to be included in the title and meta tags.
+-> Removed the language files, except English, from admin since they were
+   not translated and served no purpose.
+___________________________________________________________________________
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 13 March 2009
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added Canonical code per Greg's (Phocea) suggestion.
+-> Added code to test script to check for missing titles and meta tags.
+-> Added code to test script to check for length of titles and descriptions.
+-> Added a popup window to the test function to explain the various errors.
+-> Added an index.php and product_info.php file to the contribution.
+-> Added database option to control the TinyMCE editor. The editor must be installed separately.
+-> Fixed code in test script where only language id 1 was being checked.
+
+___________________________________________________________________________
+		Header Tags SEO v3.1.1
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 01 March 2009
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Fixed mistakes in the update sql files.
+-> Fixed mistakes in mouseover text in social module
+-> Fixed problem where the root name was not being removed for manufacturers
+-> Fixed error with Fill Tags where overrides from the manufacturers section
+    was affecting the products section as reported by Jeff Genno in post 1922.
+-> Added code to correctly handle title and meta tags when using STS. Thanks to
+    user jerico for the suggestion.
+-> Added code to check for invalid file name (containing spaces) which some
+    sites use for storage. If found, the page is skipped and a warning is issued.
+-> Changed code in includes/header_tags.php file to more accurately check for the page.
+-> Optimized manufacturers query in Fill Tags. Thanks to user mirol for the suggestion.
+-> Test page - added option to check if the default root text has not been removed.
+-> Test page - temporairly disabled STS check since the code was changed for it.
+
+___________________________________________________________________________
+		Header Tags SEO v3.1.0
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 28 November 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added code to includes/functions/header_tags.php to fill in missing
+   title and tags if none selected. This is a sort of an automatic use default option.
+-> Added a few more files to the exclude list in admin/includes/functions/header_tags.php.
+-> Fixed coding mistake in IsTemplate function that caused it to always be true.
+-> Fixed Test function that checks languages.
+-> Fixed Test function to properly handle checking files if a template system is installed.
+-> Changed mysql code to work with all stirct mysql setting.
+___________________________________________________________________________
+		Header Tags SEO v3.0.9
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 31 October 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Added code to check if shop is oscMax in admin/includes/functions/header_tags.php.
+-> Changed code for IsTemplate in admin/includes/functions/header_tags.php to
+    reduce the number of calls made.
+-> Default meta tags were not being handled correctly if the default languages
+    were not in the shop. Added code to test page to check for that and to 
+    delete the missing languages.
+-> Added option to test page to delete extra entries in the database.
+___________________________________________________________________________
+		Header Tags SEO v3.0.8
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 18 October 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Removed code in includes/functions/header_tags.php that prevented
+    manufacturers from showing on the product page.
+-> Removed the language files (except English) from admin since those
+    were in English anyway.
+-> Fixed page count test in headertags_seo_test.php so that it takes
+    pseudo pages into account.
+-> Fixed problem with add missing pages code that would prevent the files
+    from being added to the database causing a file count difference in 
+    the test function.
+-> Fixed problem with add missing pages code that would prevent the files
+    from being added to the includes/header_tags.php file causing a file 
+    count difference in the test function and those pages not to function.
+-> Fixed code for pseudo pages so the selected options and sort orders
+    are set correctly.
+-> Fixed code for pseudo box so that pressing enter will cause the page
+    to be added.
+-> Fixed code so that all pages of Articles Manager can now be added.
+-> Added code to missing pages function in fill tags to show that the
+    name is missing for some items. This was needed since page entries 
+    might exist for other languages that are not filled in, thus
+    showing up as errors.
+-> Added code to test page so that if a count error occurs, the missing
+    filenames are shown.
+-> Added options to Fill Tags that will allow the pre-filling of all 
+    (or some) titles and meta tags based on a generic sentence.
+___________________________________________________________________________
+		Header Tags SEO v3.0.7
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 30 August 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Changed code in admin/includes/boxes/header_tags.php to handle page
+    opening properly.
+-> Changed the configuration group number to prevent conflict with other
+    contributions (reported by FWR Media)
+-> Fixed code in test file to correctly check tables for fields. 
+-> Added option to test script to check for matching file counts in the
+    database and includes/header_tags.php file.
+-> Added error message for pseudo page if it already exsits.
+-> Added type casting to admin/includes/functions/header_tags.php file 
+    to remove errors on some php versions.
+-> Added primary and index entries to the tables.
+-> Added code to prevent pseudo pages from being added to the base files
+    that do not accept pseduo pages.
+-> Added code to delete the extra code added for pseudo pages when the 
+    base page is deleted.
+-> Updated documentation to better explain the available options.
+___________________________________________________________________________
+		Header Tags SEO v3.0.6
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 17 August 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Changed update instructions to include new definitions.
+-> Fixed code in includes/header_tags.php to allow home page and category 
+    pages to have unique titles.
+-> Fixed coding mistakes from last version that prevented meta tags to
+    be recorded correctly.
+ 
+___________________________________________________________________________
+		Header Tags SEO v3.0.5
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 16 August 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Changed missing tag code display in Fill Tags so the found items
+    link to the missing items edit page.
+-> Changed code in includes/header_tags.php from FILENAME_PRODUCT_WRITE
+    to FILENAME_PRODUCT_REVIEWS_WRITE.
+-> Changed code in admin/header_tags_seo.php to prevent endless loop
+    (identified by Celluloid in the support thread).
+-> Fixed coding error in the default section of Page Control that
+    prevented the options from working correctly.
+-> Fixed some coding errors in missing tags code.
+-> Fixed bug where alt text for the category sub-images was not working.
+-> Fixed error in functions code that would cause the add missing pages
+    to fail for all languages under some conditions.
+-> Fixed code for specials in includes/header_tags.php to remove invalid entry.
+-> Fixed several small coding and logic mistakes throughout code.
+-> Added option to control showing the root title, meta tags and logo text,
+    where "root" refers to the text in the box in Page Control.
+-> Added option to control showing the product title, meta tags and logo text,
+    where applicable.
+-> Added code to check that the name of the file is what's defined in
+    filenames.php (identified by Mike (dailce) in the support thread).
+-> Added code to allow the adding of pseudo pages for contributions like
+    Articles Manager.
+-> Added code to sort file list.
+-> Added a test page to check the major points of the installation. This
+    will, hopefully, help make the installation easier.
+ 
+___________________________________________________________________________
+		Header Tags SEO v3.0.4
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 03 June 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Changed missing tag code to only check for active products 
+-> Fixed error in admin/header_tags_seo.php for meta tags options (thanks 
+    to Tyrannus for mentioning this in the support thread).
+-> Fixed code in includes/header_tags.php that prevented tags from working
+    properly on the products page.
+-> Fixed code in includes/functions/header_tags.php to cause the title and 
+    meta tags to be controlled as they should.
+-> Made the change to includes/modules/header_tags_social_bookmarks.php file 
+    to allow quotes to be handled properly (thanks to Patabugen for mentioning
+    this in the support thread).
+-> Added option to Fill Tags to display missing tags.
+-> Fixed code in missing tags to correctly identify the missing tags.
+___________________________________________________________________________
+		Header Tags SEO v3.0.3
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 19 May 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Changed code in admin/header_tags_fill_tags.php, admin/categories.php
+   and admin/manufacturers.php to remove html code from title and meta keyword tag.
+-> Added includes/application_top file to the pre-made files.
+___________________________________________________________________________
+		Header Tags SEO v3.0.2
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 15 May 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Changed code in includes/functions/header_tags.php to clear the 
+   strings of unwanted characters.
+-> Added a new directory for RC2 original files.
+-> Applied various minor fixes mentioned in the support thread.
+-> Changed how includes/headert_tags.php determines the page name to account
+   for all servers.
+
+___________________________________________________________________________
+		Header Tags SEO v3.0.1
+
+Update by: Jack_mcs at support@oscommerce-solution.com
+Date: 05 April 2008
+Forum Support: http://forums.oscommerce.com/index.php?showtopic=298099
+Contribution: http://addons.oscommerce.com/info/5851
+
+-> Fixed coding mistake in includes/header_tags.php for reviews pages
+-> Added code to clear separators if a field is missing
+-> Added code to display an error if the sort order filed is missing
+-> Update convert instructions
+
+___________________________________________________________________________
+		Header Tags SEO v3.0
+
+Date: 04 April 2008
+
+This is a complete replacement of Header Tags Controller V 2.6.4. Some
+file names have been kept the same for ease of updating but, in most
+cases, they are not compatible.
+
+-> The code is 100% langage compliant.
+-> Removed the english/header_tags.php file in favor of database entries.
+-> Fixed a bug introduced in a previous version. A spelling mistake
+   would make Page Control fail in some cases. I only mention this here because 
+   it was a nasty little bug I could never locate. So anyone having that problem
+   should consider upgrading.
+-> Added control options to admin->Configuration.
+-> Added additional meta tag options. It is doubtful these will be used that much
+   but a number of requests were received for this option so it was added.
+-> Added an option to view the title and meta tags on the actual web page from admin.
+-> Added Social Bookmark code.
+-> Added code to apply mouseover text to the sites logo - unique for each page.
+-> Added code to have the breadcrumb use the header tags titles.
+-> Added an exclude list in admin/includes/functions/header_tags.php that prevents
+   header tags code from being added to certain files (like checkout pages). This is
+   because those pages don't need tags and excluding them will simplify matters.
+-> Added option to Page Control and Fill Tags so that the keywords can be dynamically generated from the
+   pages on the site. Currently, the code only supports single keywords but I plan on
+   changing that. There is an option in admin to only pick keywords that fall within the
+   keyword density settings.
+-> Added an automatic page add feature. You still have to edit the actual file in the 
+   root but that's all.
+-> Added easy install instruction for STS shops. There is just one change to make and the
+   two contribution work together.
+-> Added code to have the new features work with BTS based shops. There may be a few cases
+   where an option doesn't work due to how BTS handles the files, but they should be
+   minimal and not anything to cause a great stir.
+-> Changed how title, description and keywords are built. This should provide more
+   flexibility for those that want that option. Each item has a sort order and is displayed
+   in the string of text based on that sort order. So, for example, the title of a page can
+   contain some entered text, the default title and the category and manufacturers names (if applicable), in any
+   order.
+-> Added an Un-Install file to completely remove Header Tags from the database. This should
+   make testing and troubleshooting easier.
+-> Added code to use curl instead of standard php file calls. The code will try curl first
+   and then switch to a file command if it is not present.
+-> Tested in MS2, RC2, STS and BTS shops.
+

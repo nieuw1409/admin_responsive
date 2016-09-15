@@ -1,0 +1,29 @@
+<?php
+/*
+  $Id$
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2014 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+  define('MODULE_CONTENT_SC_ORDER_SUBTOTAL_TITLE', 'Order SubTotal');
+  define('MODULE_CONTENT_SC_ORDER_SUBTOTAL_DESCRIPTION', 'Plaats de Order Totaal op het scherm in de Winkelwagen pagina');
+  
+  define('SUB_TITLE_SUB_TOTAL', 'Sub-Totaal:');
+  
+  define('TITLE_MODULE_CONTENT_SC_ORDER_SUBTOTAL_STATUS', _MODULES_ACTIVATE_STATUS . ' ' . MODULE_CONTENT_SC_ORDER_SUBTOTAL_TITLE ) ;
+  define('DESCRIPTION_MODULE_CONTENT_SC_ORDER_SUBTOTAL_STATUS', _MODULES_ACTIVATE_STATUS_DESCRIPTION ) ;  
+  
+  define('TITLE_MODULE_CONTENT_SC_CHECKOUT_ALT_SORT_ORDER', _MODULES_SORT_ORDER . MODULE_CONTENT_SC_ORDER_SUBTOTAL_TITLE ) ;
+  define('DESCRIPTION_MODULE_CONTENT_SC_CHECKOUT_ALT_SORT_ORDER', _MODULES_SORT_ORDER_DESCRIPTION ) ;    
+
+  define('TITLE_MODULE_CONTENT_SC_CHECKOUT_ALT_TEXT_POSITION', 'De positie van de alternatieve tekst' ) ;
+  define('DESCRIPTION_MODULE_CONTENT_SC_CHECKOUT_ALT_TEXT_POSITION', 'De positie van de alternatieve tekst relatief tot de button' ) ;  
+
+  define('TITLE_MODULE_CONTENT_SC_ORDER_SUBTOTAL_CONTENT_WIDTH', _MODULES_QNT_COLUMN_BOOTSTRAP ) ;
+  define('DESCRIPTION_MODULE_CONTENT_SC_ORDER_SUBTOTAL_CONTENT_WIDTH', _MODULES_QNT_COLUMN_BOOTSTRAP_DESCRIPTION ) ;    
+?>

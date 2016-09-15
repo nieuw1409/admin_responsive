@@ -1,0 +1,49 @@
+<?php
+/*  $Id: categories_images.php v1.1.4 20101118 Kymation $
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+  Copyright (c) 2010 osCommerce
+  Released under the GNU General Public License
+*/
+  define( 'MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE', 'Index Start Pagina Categories Images' );
+  define( 'MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_DESCRIPTION', 'Instellingen van de Index Categorien Afbeeldingen module van de Start Pagina.' );
+  
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_STATUS', _MODULES_ACTIVATE_STATUS . ' ' . MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE ) ;
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_STATUS', _MODULES_ACTIVATE_STATUS_DESCRIPTION ) ;  
+  
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_CONTENT_PLACEMENT', _MODULES_CONTENT_PLACEMENT_1 . MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE . _MODULES_CONTENT_PLACEMENT_2 ) ;
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_CONTENT_PLACEMENT', _MODULES_CONTENT_PLACEMENT_DESCRIPTION ) ;  
+
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_SORT_ORDER', _MODULES_SORT_ORDER . MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE ) ;
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_SORT_ORDER', _MODULES_SORT_ORDER_DESCRIPTION ) ;    
+
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_DISPLAY_PAGES', _MODULES_DISPLAY_PAGES_1 . MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE . _MODULES_DISPLAY_PAGES_2 ) ;
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_DISPLAY_PAGES', _MODULES_DISPLAY_PAGES_DESCRIPTION  ) ;  
+  
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_USE_CACHE', _MODULE_BOXES_USE_CACHE . MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE  ) ;
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_USE_CACHE', _MODULE_BOXES_USE_CACHE_DESCRIPTION_2 . MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE ) ;  
+  
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_FRONT_TITLE', 'Titel van de box Categorieen afbeeldingen  '  . MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE ) ; // Enable Box heading
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_FRONT_TITLE', 'Dit is de Titel aan de bovenkant van de box Categorieen afbeeldingen') ;    // Do you want to add the infobox heading to box?
+
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_BOX_STYLE', 'Styling van de box Categorieen afbeeldingen  '  . MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_TITLE ) ; // Enable Box heading
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_BOX_STYLE', 'De Styling van de box Categorieen afbeeldingen') ;    // Do you want to add the infobox heading to box?
+
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_BOX_MOUSEOVER', 'Mouse Activiteit Box  '   ) ; // Enable Box heading
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_BOX_MOUSEOVER', 'Als de muis over de box van de categorien afbeeldingen beweegt ( float moet als box styling actief zijn )') ;    // Do you want to add the infobox heading to box?
+
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_BOX_COLUMNS', 'Aantal Colomen van de box Categorieen afbeeldingen  '  ) ; // Enable Box heading
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_BOX_COLUMNS', 'Het aantal colomen welke getoond worden in de box Categorieen afbeeldingen') ;    // Do you want to add the infobox heading to box?
+
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_SHOW_IMAGE', 'Afbeelding categorie in de box Categorieen afbeeldingen  '  ) ; // Enable Box heading
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_SHOW_IMAGE', 'Plaats de afbeelding van de de categorie in de box Categorieen afbeeldingen') ;    // Do you want to add the infobox heading to box?
+
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_FRONT_TITLE', 'Naam categorie in de box Categorieen afbeeldingen  '   ) ; // Enable Box heading
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_FRONT_TITLE', 'Plaats de naam van de categorie in de box Categorieen afbeeldingen') ;    // Do you want to add the infobox heading to box?
+
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_SHOW_SUBCATEGORIES', 'Subcategorien in de box Categorieen afbeeldingen  '   ) ; // Enable Box heading
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_SHOW_SUBCATEGORIES', 'Toon de Subcategorien onder de categorien in de box Categorieen afbeeldingen') ;    // Do you want to add the infobox heading to box?
+ 
+  define('TITLE_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_CONTENT_WIDTH', _MODULES_QNT_COLUMN_BOOTSTRAP ) ;
+  define('DESCRIPTION_MODULE_CONTENT_INDEX_FRONTPAGE_CATEGORIES_IMAGES_CONTENT_WIDTH', _MODULES_QNT_COLUMN_BOOTSTRAP_DESCRIPTION ) ;  
+?>

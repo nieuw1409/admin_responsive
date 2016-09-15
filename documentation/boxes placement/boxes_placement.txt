@@ -1,0 +1,13 @@
+
+Header Left	    Header Center	    Header Right
+Header line	
+
+bream column
+
+left                   content by oscommerce      right
+column                                            column
+
+
+
+Footer line	
+Footer Left	    Footer Center	    Footer Right	

@@ -1,0 +1,215 @@
+5851 header tags seo
+
+7626 modular front page
+
+7650 ckeditor
+
+3904 easy map ( google map api 2 )
+
+6818 option type
+
+6583 google xml map
+
+7717 login box
+
+7708 security pro
+
+7704 fwr ultimate seo url 5 pro
+
+7709 better adres drop down country
+
+7691 dynamic template system
+
+1026 ultimate info pages
+
+7694 header footer boxes placement ( combo with 7691 )
+
+7701 cron simulator
+
+7774 down for maintenance
+
+7744 fqa desk
+
+2417 optimize tep_get_tax (also tep_get_categories and path)
+
+7782 tagcloud
+
+7776 order tracking
+
+7802 generic box
+
+7819 database optimizer
+
+7812 order.php product image
+
+6051 productlisting enhancement ( colums / sort on )
+
+1242 quantity price breaks per product 
+
+7836 mobile iosc ( adapted to jquery mobile js and css )
+
+
+7869
+6945 product image in order history and order conformation
+
+
+7749 theme swithcher admin 
+
+7663 admin swithcher mobile and normal store
+
+7844 order editor
+
+7915 module dashboard admin google
+
+4829 manual order maker
+
+7932 mini images categories
+
+7926 updated admin dashboard graphs
+
+7925 low stock report
+
+0911 product sort
+
+8193 
+0160 option type attributes
+
+7888 ajax attribute manager
+
+1415 x sell products
+
+3027 pdf invoice
+
+7227 label pdf
+
+5498 search tag cloud
+
+7859 browse by categories
+
+5321 invoice pdf customer/catalog side
+
+7996 payment modules
+
+7994 specilas box extended
+
+5388 create account admin
+
+3115 email order text extended
+
+8021 cach lite
+
+8034 copy multiple products manager
+
+5273 specials enhanced
+
+8035 combined login screen
+
+8053 join us facebook twitter
+
+8036 supertracker
+
+8065
+8069 scrolling box whats new, specials and best sellers
+
+7791 who is online
+
+7934 keyword search report
+
+5750 customer must accept terms
+
+7725 easy populate
+
+8042 skype box
+
+8012 banner box
+
+7970 contact form already filled
+
+1026 information manager
+
+7834 oscommerce sec
+
+7942 pasword strenght
+
+5914 ip trap
+
+8080 free product
+
+4469 change password customer
+
+8082 google plus button
+
+3736 track en trace ( dutch mainly )
+
+7847 accordion categories box
+
+0000 products induvidual payment on shipping
+
+0164 pickup order at store
+
+0326 disable/ enable categories
+
+6755 cache configuration db
+
+8143 google adsense
+
+8135 admin dashboard who is online
+
+2455 updated spiders.txt
+
+8147 products cost
+
+0000 define mainpage information pages
+
+0231
+8188 clear stats
+
+0716 seperate pricing per customer 
+
+8246 b2b discount
+
+7336 SPPC group list 
+
+3059 hide product for customers group
+
+3798 quick update for sppc
+
+0000 price break for sppc
+
+8321 monthly report
+
+5173 optimize categories boxes
+
+2561 page cache
+
+2873 cache class ( used with boxes, database request )
+
+0000 availability / stock products
+
+8252 multi language installer 
+ 
+8497 multi language  admin modules and configuration
+
+8703 update databases.php
+
+8672 quick inventory
+
+8152 remove unused images
+
+7958 slideshow nivo slider
+
+3366 sppc specials by category
+
+6235 order.php add info
+
+1730 multi stores
+
+4396 default shipping module
+
+8793 modular checkout success
+
+2226 scaled images on the fly
+
+6186 sort order product listing
+
+8743 popoup window ( vacation message etc. )

@@ -1,0 +1,30 @@
+/*
+  $Id$
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+  
+  Author: Andy Nguyen (andyn@microheli.com) Jan 31-2011
+
+  Copyright (c) 2010 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+.categorymenu{ font-size: 10.5px; font-family: Arial; font-weight: bold; line-height: normal; text-decoration: none; width: 100%; overflow: hidden; }
+
+.categorymenu ul{ background-image: url(category_menu_up.png); background-repeat: repeat-x; background-attachment: scroll; background-position: 50% 50%; width: 100%; float: left; margin: 0; padding: 0; border-top: 1px solid #f1f1f1; border-left: 1px solid #999; }
+
+.categorymenu ul li{ display: inline; }
+
+.categorymenu ul li a{ float: left; color: #666; width: 100%; padding: 4px 5px 6px; }
+
+.categorymenu ul li a:visited{ color: #666; text-decoration: none; }
+
+.categorymenu ul li a:hover { color: #333; background-image: url(category_menu_hv.png); background-repeat: repeat-x; background-attachment: scroll; background-position: 50% 50%; text-decoration: none; padding-top: 6px; padding-bottom: 4px; }
+
+.categorymenu ul li a:active { color: #000; background-image: url(category_menu_dn.png); background-repeat: repeat-x; background-attachment: scroll; background-position: 50% 50%; text-decoration: none; padding-top: 7px; padding-bottom: 3px; }
+
+.categorymenu ul li .current { color: #000; text-decoration: none; }
+
+.categorymenu ul li .count { color: #333; text-decoration: none; }

@@ -1,0 +1,1068 @@
+<html>
+<head>
+<!-- If you are a mod writer / contributer, please have respect for other peoples work involved in this project and 
+leave the links in tact on the left hand side, you may if you want add your own links, failure to comply to these
+simple instructions, will result in your modification being removed.
+
+Please don't add self-serving affiliate or links to websites that provide osCommerce 
+services as that is a violation of the forum rules.
+ -->
+<title>Easy Populate Install Instructions</title>
+<style type="text/css" media="all">
+h1 {
+    font-size: 26px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: bold;
+    color: #990000;
+    background-color:#EEEEEE;
+    width:100%;
+    border-bottom:#990000 2px solid;
+    padding: 8px 0 4px 2px;
+}
+h2 {
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: bold;
+    color: #990000;
+    border-bottom:#990000 1px solid;
+}
+table {
+ width:100%;
+}
+textarea, blockquote {
+ width:550px;
+}
+fieldset, legend {
+ width:600px;
+}
+table.inner {
+ width:600px;
+}
+ul, ol {
+ padding: 6px 6px 6px 6px;
+ margin: 0 0 0 0;
+}
+li {
+ padding: 3px 0 3px 3px;
+ margin: 0 0 0 18px;
+}
+ul.tightlist li {
+ list-style-type:none;
+ padding: 1px 0 1px 3px;
+ margin: 0 0 0 18px;
+}
+.headerTD {
+ color: #000000;
+ text-align: center;
+ font-size: 36px;
+ font-weight: bold;
+ background-color: #CCCCCC;
+}
+.sectionheadTD {
+ color: #000000;
+ text-align: center;
+ font-size: 32px;
+ font-weight: bold;
+ background-color: #CCCCCC;
+ padding: 20px 0 20px 0;
+}
+.style1 {color: #FF0000}
+.style2 {color: #0000FF}
+</style>
+</head>
+<body>
+
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="headerTD">
+              <a name="what_does">&nbsp;</a>&nbsp;<br>
+              Easy Populate 2.76i 231<br>
+              <u>Installation and Documentation</u><br>
+              &nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top" align="center">
+            <table class="inner" border="0" cellpadding="2" cellspacing="0">
+              <tr>
+                <td>
+                        <i>This documentation is aimed at osCommerce Users using <font color="#FF0000"><b>
+                        osCommerce Cart Ver. 2.3.1</b></font></i><br>
+                          <br>
+                        
+                    <script type="text/javascript" language="javascript"><!--
+                    if (window.name != 'main') {
+                        document.write( '<center><table border="0" cellspacing="0" cellpadding="2" style="width:400px;background-color:#EEEEEE;"><tr><td colspan="3" align="center"><b>Table of Contents</b></td></tr><tr><td width="50%">' );
+
+                        document.write( '<table border="0" cellspacing="0" cellpadding="2">' );
+                        document.write( '<tr><td><a href="#what_does">Preamble</a><br><a href="#requirements">Requirements</a><br><a href="#installation">Installation Instructions</a><br></td></tr>' );
+                        document.write( '<tr><td><br><a href="#how_to_use">How to use Easy Populate</a><br><a href="#large_stores">Instructions for large Stores</a><br><a href="#mac_users">Instructions for MAC Users</a><br><a href="#roman">Non Roman Character sets</a><br></td></tr>');
+                        document.write( '</table>' );
+
+                        document.write( '</td><td width="50%">' );
+
+                        document.write( '<table border="0" cellspacing="0" cellpadding="2">' );
+                        document.write( '<tr><td><a href="#trouble">Troubleshooting</a><br><a href="#file_format">EasyPopulate File Format</a><br><a href="#column">Description of Column Headers</a><br><a href="#froogle">Froogle Support</a><br><a href="#extra_field">Extra Field Contrib Support</a><br>&nbsp;<br><a href="#ask_a_question">How to Get Help</a><br><a target="_blank" href="http://addons.oscommerce.com/info/500">Easy Populate Contribution</a><br></td></tr>');
+                        document.write( '</table>' );
+
+                        document.write( '</td></tr></table></center><p>&nbsp;</p>' );
+                    }
+                    //--></script>
+
+
+                      <h1>Preamble</h1>
+                          <p>Easy Populate (EP) was designed to provide a vehicle for moving products from 
+                            one shop to another or as a means to store product sets for developers. Please keep this in mind before complaining about how it works. <strong>:o)</strong><br>
+                      </p>
+                          <h2>What does EP do now?</h2>
+                      <p>EP as progressed to a tool for exporting product details for easy editing
+                            in text or with Excel. After, we can import the product detail back into
+                      the osCommerce database with changes. </p>
+                          <p>Easy Populate&nbsp; lets you quickly populate and update thousands of products
+                            in many categories for an OSC store with data from an; Excel spreadsheet,
+                            OpenOffice spreadsheet, Filemaker database, Access database. Any delimited
+                      text file (you can now set a configuration var for the separator character). </p>
+                          <p>Easy Populate can also export sets of products based on a category, manufacturer, or
+                            the product's status (visible/not visible) for editing, moving to another
+                      site or storing.</p>
+                          <p>Easy Populate supports multiple categories, multiple languages, creates Categories
+                            and Manufacturers on the fly, unlimited levels of categories/subcategories
+                            are supported, products without pictures can be defaulted to a standard
+                            "no picture available" image and file uploading via browser or grab a
+                      file from the temp directory.</p>
+                          <h2>What does EP *NOT* do well?</h2>
+                          <p>So far, EP does not handle attributes well. When viewing product export, it
+                            may be difficult to understand how it works. As such, I'do not recommend 
+                      that anyone use EP for managing attributes. But is can be done if you are patient.</p>
+                          <p>EP does not handle &quot;download&quot; attributes.</p>
+                          <p>The default behavior of EP is to Add &amp; Update. If you download a product,
+                            change its category, then upload, EP will add the product to the new category.
+                            EP will not remove it from the previous category. EP does not move products from one category to another either.</p>
+                          <p>The code is improved but still needs work. The code will read the entire
+                            product database into server memory before producing the export. New features
+                            improve the export file building to avoid loading the entire export file
+                            in memory also.<br>
+                      </p>
+                          <p>&nbsp;</p>
+                          <h1>Requirements / Points to note BEFORE Installing<a name=requirements>&nbsp;</a></h1>
+
+                        <ul style="color: #FF0000">
+                          <li><font color="#000000"><a href="http://www.oscommerce.com/" target="_blank">osCommerce
+                                2.3.1</a>, is required, it will not work with previous versions of osCommerce
+</font></li>
+                              <li><font color="#000000">If you have made database changes to the products, products_description,
+                                or other product or category related tables, you may have some
+                          issues running the stock Easy Populate.</font></li>
+                              <li><font color="#000000">Easy Populate uses the product_model field (model number) to identify the record
+                                to update. It won't work without the model number.  Each row should have a
+                          unique model number. i.e. you can't give all your products a product_model of "test".</font></li>
+                              <li><font color="#000000">Easy Populate will import tab, comma, semi-colon, or any other
+                                user-defined-separator delimited files.  The default separator for CSV files in the US is a comma. The default separator for your country may vary.
+                                If you want to
+                                change the separator, there is a variable in the configuration section
+                  of easypopulate.php.  Whatever you change it to, test it!  Remember that&nbsp;
+                                any of those separator characters anywhere in your data will cause
+                          Easy Populate to think that's another column of data unless you use double quotes to enclose the data! (see next note)</font></li>
+                              <li><font color="#000000">As of Version 2.76d, you may now enable the Excel safe output and input.
+                                This will now safely export any data (English test only), edit in excel,
+                                and re-import the data safely preserving tabs, commas, and carriage returns
+                          in your product’s description.</font></li>
+                              <li><font color="#000000">The first line of each Easy Populate
+                                file must have be a header row.  If you upload a file without the headers,
+                          Easy Populate will fail.</font></li>
+                              <li><font color="#000000">Easy Populate should work fine on shared servers, servers with safe_mode set,
+                          and servers with magic_quotes turned on or off.</font></li>
+                              <li><font color="#000000">If you set the quantity of an item to zero, EP will automatically
+                                make the item Inactive in the database.  To change the behavior,&nbsp;see the Configuration Variables section.</font></li>
+                              <li><font color="#000000">Easy Populate does NO formatting or conversion of date formats.  It gives
+                                you exactly what came out of mysql, and it takes exactly the data&nbsp;
+                                you give Easy Populate and shoves it into mysql.  If you use a format that is
+                                not the mysql default, you'll push bad data into your date fields&nbsp;
+                                in your database.  Use this format and you'll avoid problems:
+                          YYYY-MM-DD.</font></li>
+                              <li><font color="#000000">Also, be aware that backslashes can confuse EP and the database
+                                because the backslash character is the escape character for strings
+                          in mysql. If you need a backslash in your data, add a second, so there a two together.</font></li>
+                              <li style="color: #FF0000"><font color="#000000">If you have problems with text fields you may have to "escape", that is use a
+                                backslashes (\), on single quotes (') and double quotes (") in product name
+                          and description fields. This issue may have been solved with Excel safe output option.</font></li>
+                  </ul>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+                </td>
+              </tr>
+            </table>
+           </td>
+        </tr>
+        <tr>
+            <td class="sectionheadTD">Installation Instructions<a name=installation>&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td valign="top" align="center">
+            <table class="inner" border="0" cellpadding="2" cellspacing="0">
+              <tr>
+                <td><table border="1" bordercolor="#FF0000" cellspacing="0" cellpadding="5">
+                    <tr>
+                      <td bgcolor="#FF9999" align="center"><b>&nbsp;<br>
+                        * BACKUP YOUR DATABASE * BACKUP YOUR DATABASE * BACKUP YOUR DATABASE
+                        * BACKUP YOUR DATABASE *<br>
+                        &nbsp;</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>If you do not know how to backup and restore your
+                        SQL database, you should <font color="#FF0000"><b> not</b></font> use this contribution.  The potential for
+                        great catastrophe is VERY GREAT !! Easy Populate comes with no warranty.  If it
+                        loses your data, it's not any of the contributors fault.
+                        Always test new modifications and contributions on a
+                        development or backup store.</td>
+                    </tr>
+                  </table>
+                
+                <br>
+                  <h1>Basic Installation</h1>
+                  <p><span class="style1"><strong>Please Note:</strong> The instructions refer to the <strong>/catalog/</strong> folder often. This is the default location for osCommerce to be installed. Your installation may not be placed in this folder on your web server. Please adjust to your specific installation.</span></p>
+                  <p>We will be working with the following files and folders from the contribution package:<br>
+                    <br>
+                    <strong>/catalog/admin/easypopulate.php <br>
+                    /catalog/admin/easypopulate_functions.php<br>
+                    /catalog/admin/EPDocumentation/index.html<br>
+/catalog/admin/EPDocumentation/contents.htm<br>
+/catalog/admin/EPDocumentation/links.htm<br>
+                    /catalog/temp/</strong><br>
+                  <br />
+                  </p>
+                  
+<fieldset>
+                    <legend><font color="#990000">STEP #1 - Upload the following files to your  osCommerce Store Directory</font></legend>
+                        <ul>
+                        <li>Copy file <b>/catalog/admin/easypopulate.php</b> into
+                        /catalog/admin/ or whatever folder you have placed the osCommerce admin.</li>
+                        <li>Copy file<strong> </strong><b>/catalog/admin/easypopulate_functions.php</b> into
+                        /catalog/admin/ folder.</li>
+                        <li>Copy the <strong>/catalog/admin/EPDocumentation/</strong> folder (3 files) into your /catalog/admin/ folder.</li>
+                        </ul>
+                  </fieldset>
+                  
+                  <br/><br/>
+                  
+                    <fieldset>
+                    <legend><font color="#990000">STEP #2 - Setup the &quot;temp&quot; folder</font></legend>
+                        <ul>
+                        <li>The &quot;<b>/catalog/temp</b>/&quot; folder should be uploaded to (or created in) the root of your store (Beside the /admin/, /images/, and /includes/ Directories)</li>
+                        <li>Set the CHMOD permissions of this folder to <b><font color="#990000">777</font></b>, if you do not know how to do this, ask your host to do it for you. It can be done with a free FTP software called FileZilla (Goggle it), and it can be done in DreamWeaver. With FileZilla, right-click the /temp/ folder and select &quot;File Attributes...&quot;, then set the permissions. In DreamWeaver, in remote view, right-click the folder and select &quot;Set Permissions...&quot;, then set the permissions.</li>
+                        <li>If you need to change the location of the &quot;<b>temp</b>&quot; folder to some other location,
+                        you will need to edit the below define found near the top of the <b>/admin/easypopulate.php</b> file:<br>
+                        <br>
+                        define ('EP_TEMP_DIRECTORY', DIR_FS_CATALOG . 'temp/');</li>
+                        </ul>
+                    </fieldset>
+                  
+                  <br/><br/>
+               
+                    <fieldset>
+                    <legend><font color="#990000">STEP #3 - Add a link in the
+                        Admin Panel. Edit file &quot;<b>/catalog/admin/incudes/boxes/catalog.php</b>&quot;</font></legend>
+                        <p><b>Find this code (Around Line 25):</b></p>
+                        <textarea cols="70" rows="6">array(
+        'code' => FILENAME_PRODUCTS_ATTRIBUTES,
+        'title' => BOX_CATALOG_CATEGORIES_PRODUCTS_ATTRIBUTES,
+        'link' => tep_href_link(FILENAME_PRODUCTS_ATTRIBUTES)
+      ),
+</textarea>
+                        <p><b>Directly AFTER add this:</b></p>
+                        <textarea name="textarea" cols="70" rows="6">      array(
+        'code' => 'easypopulate.php',
+        'title' => 'Easy Populate',
+        'link' => tep_href_link('easypopulate.php')
+      ),
+</textarea>
+                        <br>
+                        <br>
+                    </fieldset>
+                  
+                 <fieldset>
+                    <legend><font color="#990000">STEP #4 - Check with your web host about your hosting environment</font></legend>
+                    
+                    <p>There are several variables that may affect some with large data files when using Easy Populate. 
+                    These can usually be adjusted to fit your needs in a Linux/Apache environment by adding a php.ini file in your /admin/ folder. 
+                    Do check with your host on this to ensure that a) it can be done, and b) you're staying within your Terms of Service.
+                    This forum post may help: <br>
+                    <a href="http://forums.oscommerce.com/index.php?showtopic=162244&amp;st=5900&amp;p=1101458&amp;#entry1101458" target="_blank">http://forums.oscommerce.com/index.php?showtopic=162244&amp;st=5900&amp;p=1101458&amp;#entry1101458</a></p>
+                    <p>When these factors come into play, often the script will simply halt with no error message.</p>
+                    <p>The following php.ini settings are considered to be "default" by most hosts. Adjust higher as needed.</p>
+                    <ul>
+                      <li><b>max_execution_time = 30 ;(in seconds)</b><br>
+                      Change this to allow for more time that PHP can process your import file.</li>
+                      <li><b>max_input_time = 60 ;(in seconds)</b><br>
+                      <b>post_max_size = 2M ;</b><br>
+                      <b>upload_max_filesize = 2M ;</b><br>
+                      These will limit the size of a file you can import using Easy Populate. This can be circumvented by uploading the file via FTP to your /temp/ folder and importing it from there.</li>
+                      <li><b>memory_limit = 8M ;</b><br>
+                      Change this to allow PHP to use more memory to process your file. (32M recommended)</li>
+                      <li><b>session.gc_maxlifetime = 1440 ; (in seconds)</b><br>
+                      Your session lifetime, should always be longer then the max_execution_time.</li>
+                    </ul>
+                  </fieldset>
+
+                  <br/><br/>
+                  
+                  <fieldset>
+                    <legend><font color="#990000">STEP #5 - Configuring the file
+                      &quot;<b>/catalog/admin/easypopulate.php</b>&quot;</font></legend>
+                    <p>PLEASE DO THIS!!!!!:  Go to <b>/catalog/admin/easypopulate.php</b> and read the section marked&nbsp;"Configuration Variables".  It will allow you to adjust
+                        <font color="#000000">Easy Populate</font>'s operation&nbsp;for your store.
+                        I meant what I said, Please, Pretty please, do read the&nbsp;entire configuration stuff.  Really.  You'll be glad you did since if you
+                        don't and come to the support topic asking questions the docs answer, you&nbsp;may simply get asked to read the docs anyway.  You'll find all kinds of&nbsp;neat configurable stuff there.</p>
+                  </fieldset>
+                  <br/></td>
+              </tr>
+              <tr>
+                <td>
+                  Installation is complete, <strong>You did read the entire config section like I suggested in
+                  STEP#7 above, right? ;-)</strong><br>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  &nbsp;
+                  
+                </td>
+              </tr>
+            </table>
+           </td>
+        </tr>
+ 
+        <tr>
+            <td class="sectionheadTD">How to Use Easy Populate<a name=how_to_use>&nbsp;</a></td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+            <table class="inner" border="0" cellpadding="2" cellspacing="0">
+              <tr>
+                <td><table border="1" bordercolor="#FF0000" cellspacing="0" cellpadding="5">
+                    <tr>
+                      <td bgcolor="#FF9999" align="center"><b>&nbsp;<br>
+                        * BACKUP YOUR DATABASE * BACKUP YOUR DATABASE * BACKUP YOUR DATABASE
+                        * BACKUP YOUR DATABASE *<br>
+                        &nbsp;</b>                      </td>
+                    </tr>
+                    <tr>
+                      <td>If you do not know how to backup and restore your
+                        SQL database, you should <font color="#FF0000"><b> not</b></font> use this contribution.  The potential for
+                        great catastrophe is VERY GREAT !! Easy Populate comes with no warranty.  If it
+                        loses your data, it's not any of the contributors fault.
+                        Always test new modifications and contributions on a
+                        development or backup store.</td>
+                    </tr>
+                  </table>
+<br>
+                <h2>How to Use</h2>
+                  <ol>
+                    <li>Open up your internet browser and go to your osCommerce
+                      Store Admin Panel<br>
+                      Go to osCommerce <b> Admin</b> -> <b> Catalog</b> -> <b> Easy Populate</b></li>
+                    <li>Click one of the links at the bottom of the box marked
+                      &quot;<b>Create then Download Files</b>&quot;&nbsp;and save the file to your local machine.&nbsp;</li>
+                    <li>Edit the file in Excel or OpenOffice. Windows users just right click and "Open with" -> Excel.&nbsp;</li>
+                    <li>After you are done editing, save the file:
+                      <ul>
+                        <li type="disc"> Windows-Excel users: should 
+Save as... CSV (MS-DOS) in most cases, <br>
+or as a &quot;Text (tab delimited)&quot; file from Excel if a tab delimited file is desired. <br>
+or MAC-Excel users, Save as... Windows-CSV. (see <a href="#mac_users">Instructions for MAC Users</a> below)<br>
+                        </li>
+                        <li type="disc">OpenOffice users: as a "Text" file, check the "edit MORE HERE"&nbsp;</li>
+                        <li type="disc">Those with special character needs (such as cyrillic), use Open Office<br>
+See <a href="#roman">Special Instructions for Non-Roman Character Sets</a> (below)<br>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>If you have more that <b><font color="#FF0000"> 300</font></b> items in your store, read the
+                      <font color="#FF0000"><a href="#large_stores">SPECIAL INSTRUCTIONS FOR LARGE STORES</a>&nbsp;</font></li>
+                    <li>Now go back to <b> Admin</b> -> <b> Catalog</b> -> <b> Easy Populate</b> and click the upper
+                      <b> Browse</b> button,&nbsp;find your file that you want to upload, then click
+                      <b> Upload and Insert Into Database</b>.</li>
+                    <li>The file will be uploaded to your store.  You should see a display that lists the items you&nbsp;are importing.  If the last row appears blank, and complains that it can't import this record,&nbsp;all is fine, it's not unusual to get this error at the end of the file.</li>
+                    <li>If you'd like to use FTP and upload the file, put it in the EP_TEMP_DIRECTORY directory,&nbsp;and then put the filename in the box under "Upload from Temp dir" and click Insert Into&nbsp;Database. Remember the file must be readable by the username that the web server is running&nbsp;as. You might have to chmod 777 the uploaded file to let the script read it.</li>
+                  </ol>
+                  <br>
+                  <h2>What does EP do with my data? (How it works)</h2>
+                  <p>When you upload a file, this is what EP does:</p>
+                  <ul>
+                    <li>Breaks the file into lines based on the explicit field named
+                      &quot;<b>EOREOR</b>&quot;.  This word &quot;<b>EOREOR</b>&quot;
+                      must appear in the last field in each row of your data, or EP won't work.</li>
+                    <li>Reads the first row to get the names of the fields you are importing.  This is why you must
+                      have the header row in the file.</li>
+                    <li>Checks to see if there is a valid product_model in the row, if it's not there, throw an error
+                      and go on to the next row.</li>
+                    <li>Checks to see if the category &amp; Manufacturer given exist in the database.  If they do, 
+                      it updates teh category image.  If they do not exist, it creates the category/subcategories
+                      as needed, and then puts the product into that category/subcategory. <br>
+                      <br>
+                      If you are using a
+                      multilanguage shop, the category name with the language ID that is first in your language
+                      Sort Order is used to compare and find the existing cateogry. You can change the language
+                      Sort Order in the Admin -&gt; Localization -&gt; Languages. The language with the first Sort Order
+                      will always be used to compare existing Categories. <br>
+                      <br>
+                      The remaining category names are updated. 
+                      If another row is found with the same Model number, but a different category,
+                      then that product is added to the second cateogry and all product information is updated
+                      again. This is similar to the osCommerce &quot;copy Product&quot; using the Link Product method.<br>
+                    </li>
+                    <li>Checks to see that the product_model is not too long.  Stock OSC comes with just 12 characters
+                      available for the product_model.  If you need more than 12, change your database and edit
+                      easypopulate.php and change the configuration variable EP_MODEL_NUMBER_SIZE.  If it is not
+                      the right size, the import stops right then.</li>
+                    <li>If the product_model does not exist in the database, the product is created with the
+                      information given (price, weight, qty).  If it does exist, then the database is updated.</li>
+                  </ul>                
+                  
+                  <h2>Can I add a product to more then one category? Yes!<br>
+                  </h2>
+                  <p>                    Duplicate the product row, then change the category name.  Each row in the EP upload file<br>
+                    will place the product in a different category the same as the osCommerce Admin does a  &quot;link&quot; to multiple categories.<br>
+                  </p>
+                  <p>&nbsp;</p>
+
+
+                  <h1>Easy Populate File Format<a name="file_format">&nbsp;</a></h1>
+                  This describes the file layout for the "Complete" download
+                  <ol>
+                    <li>fields are delimited with a single "separator" character.</li>
+                    <li>fields do not need to be enclosed in quotes, unless it contains quotes or the separator character you are using.</li>
+                    <li>Each import file should have a row at the top (header row) that defines each column. The column headings are as follows.</li>
+                    <li>The first product's data follows the header row avoiding any blank lines. Products are setup one line per product.</li>
+                  </ol>
+                  <p>The names of all the fields in order are:</p>
+                  <ul class="tightlist">
+                    <li class="style2">v_products_model</li>
+                    <li><span class="style2">v_products_image</span></li>
+                    <li><span class="style2">v_products_name_N</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       // where N is the language ID</li>
+                    <li><span class="style2">v_products_description_N</span> &nbsp;&nbsp;&nbsp;     // where N is the language ID</li>
+                    <li><span class="style2">v_products_url_N</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;             // where N is the language ID</li>
+                    <li class="style2">v_products_price</li>
+                    <li><span class="style2">v_products_specials_price</span> &nbsp; &nbsp;  // Special Price</li>
+                    <li class="style2">v_products_weight</li>
+                    <li><span class="style2">v_date_added </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;        // &nbsp; YYYY-MM-DD  </li>
+                    <li><span class="style2">v_date_avail</span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// &nbsp; YYYY-MM-DD </li>
+                    <li><span class="style2">v_products_quantity</span></li>
+                    <li class="style2">v_manufacturers_name</li>
+                    <li class="style2">v_categories_image_1</li>
+                    <li><span class="style2">v_categories_name_1_1</span>   &nbsp; &nbsp; &nbsp;        // root category, language ID 1 (English)</li>
+                    <li><span class="style2">v_categories_name_1_2</span>   &nbsp; &nbsp; &nbsp;         // root category, language ID 2 (Deutsch)</li>
+                    <li><span class="style2">v_categories_name_1_3</span>    &nbsp; &nbsp; &nbsp;        // root category, language ID 3
+                      (Español)</li>
+                    <li class="style2">v_categories_image_2</li>
+                    <li><span class="style2">v_categories_name_2_1</span>    &nbsp; &nbsp; &nbsp;       // second level cateogry (first sub-cat), language ID 1 (English)</li>
+                    <li><span class="style2">v_categories_name_2_2</span>    &nbsp; &nbsp; &nbsp;       // second level cateogry (first sub-cat), language ID 2 (Deutsch)</li>
+                    <li><span class="style2">v_categories_name_2_3</span>    &nbsp; &nbsp; &nbsp;       // second level cateogry (first sub-cat), language ID 3
+                      (Español)</li>
+                    <li class="style2">v_categories_image_3</li>
+                    <li><span class="style2">v_categories_name_3_1</span>     &nbsp; &nbsp; &nbsp;       // third level category (second sub-cat), language ID 1 (English)</li>
+                    <li><span class="style2">v_categories_name_3_2</span>     &nbsp; &nbsp; &nbsp;       // third level category (second sub-cat), language ID 2 (Deutsch)</li>
+                    <li><span class="style2">v_categories_name_3_3</span>     &nbsp; &nbsp; &nbsp;       // third level category (second sub-cat), language ID 3
+                      (Español)</li>
+                    <li class="style2">v_tax_class_id</li>
+                    <li><span class="style2">v_status</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Active, Inactive, or Delete</li>
+                    <li><span class="style2">EOREOR</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  // ALL ROWS MUST END WITH A "EOREOR" in the last cell</li>
+                    <li><br><br>
+                    <h2>The following items are optional and will only be used if you have other contributions installed, and the items enabled in this contribution's settings.</h2>
+                    </li>
+                    <li>
+                       <strong># If you have turned on support for Additional Images, the following are available:</strong>                    </li>
+                    <li><span class="style2">v_products_image_description</span> &nbsp; // Primary Image description</li>
+                    <li><span class="style2">v_products_image_N</span> &nbsp; // Where N is a sequential number for each additional image.</li>
+                    <li><span class="style2">v_products_image_description_N</span> &nbsp; // Where N is a sequential number for each description.<br>
+                    <br>
+                       <strong># If you have turned on support for MVS the following is available:</strong>                    </li>
+                    <li><span class="style2">v_vendor</span> &nbsp; // Nane of the Vendor. You must create the vendor manually before import.<br>
+                    <br>
+                       <strong># If you have turned on support for the X-Sell contribution the following is available:</strong>                    </li>
+                    <li><span class="style2">v_cross_sell</span> &nbsp; // Contains a comma separated list of related model numbers.<br>
+                    <br>
+                       <strong># If you have turned on PDF File Upload and Display the following are available:</strong>                    </li>
+                    <li class="style2">v_products_pdfupload</li>
+                    <li><span class="style2">v_products_fileupload</span><br>
+                    <br>
+                       <strong># If you have turned on support for UltraPics the following are available:</strong>                    </li>
+                    <li class="style2">v_products_image_med</li>
+                    <li class="style2">v_products_image_lrg</li>
+                    <li class="style2">v_products_image_sm_1</li>
+                    <li class="style2">v_products_image_xl_1</li>
+                    <li class="style2">v_products_image_sm_2</li>
+                    <li class="style2">v_products_image_xl_2</li>
+                    <li class="style2">v_products_image_sm_3</li>
+                    <li class="style2">v_products_image_xl_3</li>
+                    <li class="style2">v_products_image_sm_4</li>
+                    <li class="style2">v_products_image_xl_4</li>
+                    <li class="style2">v_products_image_sm_5</li>
+                    <li class="style2">v_products_image_xl_5</li>
+                    <li class="style2">v_products_image_sm_6</li>
+                    <li><span class="style2">v_products_image_xl_6</span><br>
+                    <br>
+                       <strong># If you have turned on support for More Pics 6 the following 6 are available:</strong>                    </li>
+                    <li class="style2">v_products_subimage1</li>
+                    <li class="style2">v_products_subimage2</li>
+                    <li class="style2">v_products_subimage3</li>
+                    <li class="style2">v_products_subimage4</li>
+                    <li class="style2">v_products_subimage5</li>
+                    <li><span class="style2">v_products_subimage6</span><br>
+                      <br>
+                      <strong># If you have turned on support for Header Tags Controller these 3 are available:                      </strong>                    </li>
+                    <li><span class="style2">v_products_head_title_tag_N</span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  // where N is the language ID</li>
+                    <li><span class="style2">v_products_head_desc_tag_N</span>   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  // where N is the language ID</li>
+                    <li><span class="style2">v_products_head_keywords_N</span>    &nbsp; &nbsp; &nbsp; &nbsp; // where N is the language ID<br>
+                      &nbsp;
+                      <br>
+                      <strong># If you have turned on support for Separate Pricing Per Customer, use these 2:<br>
+                      # Note: these must appear in pairs!!  You cannot have a price without an ID.</strong>                    </li>
+                    <li><span class="style2">v_customer_price_N</span>   &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;        // where N is the ordinal number of groups/prices</li>
+                    <li><span class="style2">v_customer_group_id_N</span>   &nbsp; &nbsp; &nbsp;      // match this with the v_customer_price_N "N" from above.<br>
+                      &nbsp;</li>
+                  </ul>
+                  <p>&nbsp;</p>
+
+
+
+                  <h1>Description of Columns<a name=column>&nbsp;</a></h1>
+                  <ul>
+                    <li>'<b>v_products_model</b>'  The model number for the product. You must add this to each line and  all
+                      <b> v_products_model</b> must be unique.</li>
+                    <li>'<b>v_products_image</b>'  The name of the image file for the product.  May contain subdirectories
+                      (i.w. mysubdir/mypic.gif).  If left blank, it will default as set in the configuration section of easypopulate.php</li>
+                    <li>'<b>v_products_name_1</b>', '<b>v_products_description_1</b>'
+                      and '<b>v_products_url_1</b>'  For each language you have active in your store, you'll get a
+                      name, description and url for that product.</li>
+                    <li>'<b>v_products_price</b>'  Price you want listed.</li>
+                    <li>'<b>v_products_specials_price</b>'  Is this product on special?  Use this column for osCommerce Special.</li>
+                    <li>'<b>v_products_weight</b>'  Weight.  Assumes you're using the default weight</li>
+                    <li>'<b>v_date_avail</b>'  When the product will become available.  Defaults to today if left blank.</li>
+                    <li>'<b>v_date_added</b>'  When the product will be reported as being added to the database.  Defaults to today if left blank.</li>
+                    <li>'<b>v_products_quantity</b>'  Number of the products you have on hand.  If left blank, it defaults to 1000</li>
+                    <li>'<b>v_manufacturers_name</b>' and '<b>v_categories_image</b>'  The name of the manufacturer. If not already in the database, it will be created<br>
+                      &nbsp;&nbsp;</li>
+                    <li>'<b>v_categories_image_1</b>'</li>
+                    <li>'<b>v_categories_name_1_1</b>'          // root category, language ID 1 (English)</li>
+                    <li>'<b>v_categories_name_1_2</b>'          // root category, language ID 2 (Deutsch)</li>
+                    <li>'<b>v_categories_name_1_3</b>'          // root category, language ID 3
+                      (Español)</li>
+                    <li>'<b>v_categories_image_2</b>'</li>
+                    <li>'<b>v_categories_name_2_1</b>'          // second level cateogry (first sub-cat), language ID 1 (English)</li>
+                    <li>'<b>v_categories_name_2_2</b>'          // second level cateogry (first sub-cat), language ID 2 (Deutsch)</li>
+                    <li>'<b>v_categories_name_2_3</b>'          // second level cateogry (first sub-cat), language ID 3
+                      (Español)</li>
+                    <li>'<b>v_categories_image_3</b>'</li>
+                    <li>'<b>v_categories_name_3_1</b>'          // third level category (second sub-cat), language ID 1 (English)</li>
+                    <li>'<b>v_categories_name_3_2</b>'          // third level category (second sub-cat), language ID 2 (Deutsch)</li>
+                    <li>'<b>v_categories_name_3_3</b>'          // third level category (second sub-cat), language ID 3
+                      (Español)<br>
+                      <br>
+  The category hierarchy that this product should be listed under.  Note that v_categories_name_1_1 is the Highest level category, in English.<br>
+                      <br>
+  The first number of the categories name field is the category level. The number 1 is the highest or top category.<br>
+  The second number of the categories name field is the language. The number is the language id.  In a default osC ship they will be 1 = English,&nbsp;<br>
+  2 = Deutsch, 3 = Español.<br>
+  An example:  If you are selling cars and you want to list a Pontiac Aztec, you'd have something like this:<br>
+                      <b>  Cars</b> -> <b>       General Motors</b> -> <b>                      Pontiac</b><br>
+                      <br>
+  for categories, and the Aztec would be listed in the Pontiac subcategory.&nbsp;<br>
+  So your data would look like this:<br>
+    v_categories_name_1_1 = <b>Cars</b>, English<br>
+    v_categories_name_2_1 = <b> General Motors</b>, English<br>
+    v_cateogries_name_3_1 = <b>Pontiac</b>, English<br>
+                      <br>
+  See, highest level category to lowest level category.<br>
+                      &nbsp;</li>
+                    <li>'<b>v_tax_class_id</b>'  The tax status you want to assign to this product</li>
+                    <li>'<b>v_status</b>'  The status you want to set for this item.  Defaults to Active.  To make the  product inactive, put the word Inactive in the field.
+                      <font color="#FF0000">Note</font>:  If you set a&nbsp;<br>
+  product with zero quantity active, and the <b> EP_INACTIVATE_ZERO_QUANTITIES</b> flag  in the configuration constants section is set to true, it will be inactive in  the database.  If you want to use different words for Active/Inactive, you can  change the configuration variables
+                      <b>EP_TEXT_ACTIVE</b>, <b>EP_TEXT_INACTIVE</b>, and <b>EP_DELETE_IT
+                      </b>in the configuration constants section of <b>/catalog/admin/easypopulate.php</b>
+                      file.<br>
+  Valid entries in this column are: <b>    Active</b>, <b>    Inactive</b> or <b>    Delete</b></li>
+                    <li>'<b>EOREOR</b>'  This is a <font color="#FF0000"> REQUIRED
+                      FIELD</font>!  It gives an explicit end to the row of data.  This  must appear on every row of your data.</li>
+                  </ul>
+                  <p>&nbsp;</p>
+
+
+
+                  <h1>Special Instructions for Large Stores<a name="large_stores">&nbsp;</a></h1>
+                  If your store has over 300 products, you will likely run into PHP timeout issues.  The
+                  maximum time that a script can run is set in the php.ini file.  The default is 30 seconds,
+                  and it seems that most people can upload about 300 items within that time.<br>
+                  <br>
+                  If your store is over 300 items, you must split the file before it can be uploaded.  You
+                  can do this by hand, or you can use the file-splitting feature of EP.  If you split by
+                  hand remember that EP expects the first row in every file to be the headers, and will
+                  throw this line out.  So if you don't have the header row, the code with not work correctly.&nbsp;<br>
+                  <br>
+                  To split a file with EP:
+                  <ul>
+                    <li>Go to <b> Admin</b> -> <b> Catalog</b> -> <b> Easy Populate</b></li>
+                    <li>Click the lower <b> browse</b> button and get the file you want to split.</li>
+                    <li>Click the button named &quot;<b>Upload and Split file</b>&quot;.</li>
+                  </ul>
+                  <p>The file will be split into sections, each with 300 products, the last one being shorter as
+                  needed. These new files will be saved in the /catalog/temp directory, and will be named like
+                  this: <b>EP_Split1.txt</b>, <b>EP_Split2.txt</b>, etc.&nbsp;<br>
+                  <br>
+                  Import each file using the &quot;<b>Import EP file from Temp
+                  Dir</b>&quot; section of the EP main page.<br>
+                  <br>
+                  If these files are still to large, edit <b> easypopulate.php</b> and change the configuration constant
+                  <b>EP_SPLIT_MAX_RECORDS</b> to a smaller number. This controls how many records are put into a single
+                  file when you split it. You may also increase that number if your PHP installation will handle
+                  the additional records without timing-out.<br>
+                  <br>
+                  For those attempting to upload large files, remember, PHP has a limit built in so if your
+                  upload simply refreshes the page and nothing happens, no output is provided, then you
+                  may have a file that is too large for your PHP settings.<br>
+                  &nbsp;<br></td>
+              </tr>
+              <tr>
+                <td><p>&nbsp;</p>
+                <h1>Special Instructions for Mac Users<a name="mac_users">&nbsp;</a></h1>
+                  <p>MAC Users should be sure to Save as... from Excel and specify &quot;Windows CSV&quot; or &quot;DOS-CSV&quot; format
+                    as described above in the general usage help.</p>
+                  <p>If that doesn't work for you, try the following.</p>
+                  <p>                    Because of the differences in the end-of-line characters used by Apple's operating systems,
+                  after editing and saving the file, you'll need to open the file in BBedit or
+                  equivalent and change the line endings to "Unix".<br>
+                  <br>
+                  When the product name contains characters with accents they are translated to other characters
+                  in the database. ó, for example becomes A with a ~ and a superscript 3.
+                  Saving the file as ISO-8859-1 solves the problem. (thanks to BenBogart for this!)<br>
+&nbsp;</p></td>
+              </tr>
+              <tr>
+                <td><p>&nbsp;</p>
+                 <h1>Special Instructions for Non-Roman Character Sets<a name="roman">&nbsp;</a></h1>
+                  <i>(Special Thanks to Richard for this!)</i><br><br>
+                  
+                  If you want to feed your database with Cyrillic characters (or any other
+                  ones) I recommend to download Open Office. <a href="http://www.openoffice.org/" target="_blank">http://www.openoffice.org/</a><br>
+                  <br>
+                  Open Office gives you the possibility to save a csv-file with the encoding
+                  you need! The OpenOffice application which you shall use for that issue is
+                  CALC. It's the Open Office equivalent to Microsoft Excel.<br>
+                  <br>
+                  Something general to take care about - Be aware that, if you add another
+                  language the language ID has most probably the "ID-4", even if you deleted one<br>
+                  of the default languages before. So if you include Cyrillic fonts to a field
+                  with ID 3 they might not show up then. The easiest way to check that is to
+                  download an easy-populate feed and check the ID like that.<br>
+                  <br>
+                  After your Open-Office calc-file contains all the information you need, just
+                  choose "save as" and select "Text CSV" in the dropdown menu. Under the
+                  dropdown-menu check additionally "Filtereinstellungen bearbeiten" (for
+                  German prog-versions) or if you use an english Open Office version, the
+                  checkbox might be labeled like "change filter-settings" or something
+                  similar.<br>
+                  <br>
+                  Then press "save" and a pop-up window appears, telling that parts of the
+                  format might be lost. You press "YES" and you'll see a next dialog, where you should choose<br>
+                  # encoding (many options)<br>
+                  # separator for field&nbsp;<br>
+                  # dividing element for text<br>
+                  <br>
+                  If you want to feed your database with Cyrillic letters,
+                  &quot;Cyrillic windows-1251" is pretty standard and might work for you from the scratch.
+                  If not, you shall experiment and try the other encodings. You will see, that
+                  the prog gives you lot's of different encoding options.<br>
+                  <br>
+                  For me the dividing element (separator) was in any case "semi-colon" even I
+                  had defined "comma" in the easy populate settings! So if you can't
+                  upload with your defined separator give that a try.<br>
+                  <br>
+                  If you once have your file uploaded and it's successful in the database you
+                  shall be aware that if you download the product-file with easy populate you
+                  shall open this CSV file in any case by choosing the right encoding in the
+                  opening dialog! That's important because otherwise you'll screw up the
+                  encoding.&nbsp;<br>
+                  <br>
+                  The process is anyway obvious. Also the right separator shall be easy to
+                  select, because you see the result in real-time, by choosing the different
+                  options for separator in the opening dialog. Then just make your changes and save it like
+                  described above.<br>
+                  <br>
+                  This was the only version which worked for me and I hope it will help the
+                  one or the other lonely nerd, feeding her/his system in the Russian (or any
+                  other) way.<br>
+                  &nbsp;
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>                  </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+            <td class="sectionheadTD">Support Documentation<a name=trouble>&nbsp;</a></td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+            <table class="inner" border="0" cellpadding="2" cellspacing="0">
+              <tr>
+                <td><p>&nbsp;</p>
+                <h1>Troubleshooting Help</h1>
+                  <br>
+
+
+                  <h2>It doesn't work! What should I do?</h2>
+                  <p>
+                  Check through these common error messages, if they do not reflect your symptoms there are some basic fault
+                  steps described later in this section.<br>
+                  <br>
+ First, look for really obvious problems with your file.
+                  <ol>
+                    <li>Did you download a file via Easy Populate first?  If not, do that now.</li>
+                    <li>Compare the file you're trying to upload to the file you downloaded.    Look for missing fields.  Ignore the quotes, EP won't care about missing quotes.    Open it in a text editor instead of excel.  Look for odd characters that shouldn't be there.</li>
+                    <li>Copy your import file, trim the copy to only 5 import rows and try again. If it works, you may    have a limit to the size of your upload file.  See step 5 of the installation and consult your host.</li>
+                    <li>Try uploading the file you just downloaded.  If this doesn't work, you've got basic problems,
+                      go to the <a href="#ask_a_question">Easy
+                      Populate Support Forum</a> and describe your errors.  Please search for your error message first, if there    is no fix, then post a very specific problem report.    Don't just
+                      post a message saying "It's broken", or we're likely to say, "Well, fix it!",
+                      the more information you can give on the error, the
+                      quicker a solution will be found.</li>
+                    <li>If you can upload the unmodified downloaded file, then try adding just one product to it, and    upload that.  Keep it simple, no fancy stuff in the descriptions or anything.</li>
+                  </ol>
+                  </p>
+                  <br>
+
+
+                  <h2>When I open the export file with Excel, it changes my column data.</h2>
+                  <p>The columns that Excel messes with is the model numbers (if there are dashes), and the date columns.</p>
+                  <p>Excel examines the data imported from text type data documents and formats it as Excel sees fit. Luckily there is a fairly easy way to fix that.</p>
+                  <p>With Excel XP there is a Data dropdown menu.  Under that menu is a menu option called Import External Data. Use this to import the CSV file into Excel.</p>
+                  <p>This is a multi-step process that lets you define the field separator and column properties.  Any column Excel is modifying, you should specify a data type of text.</p>
+
+
+                  <h2>My products aren't in the right categories! What now?</h2>
+                  <p>Previous versions of EP required that the categories be listed from lowest to highest level categories.  This has changed, and now the categories are from left to right in the file, highest to lowest level.  So if you want your product to end up in:<br>
+                  <br>
+ Rocks ->       Sedimentary Rocks ->                         Limestone Rocks<br>
+                  <br>
+ Then your categories should be set like this in the file:<br>
+ v_categories_name_1_1 = Rocks - English<br>
+ v_categories_name_2_1 = Sedimentary Rocks - English<br>
+ v_categories_name_3_1 = Limestone Rocks - English<br>
+                  </p>
+                  <p>&nbsp;</p>
+                  <h2>My products are going in duplicate categories instead of the one I specify, what now?</h2>
+                  <p> The default osCommerce shop has a 32 character limit to the category name. So when EP
+                    is importing the products, the cateogry name is truncated.  The next products import 
+                    can't find the existing category because the name in the database is not complete. So
+                    EP will create another, and another.<br>
+                  </p>
+                  <p> If you categories look like this:<br>
+                    v_categories_name_1_1 = Small Category Name<br>
+                    v_categories_name_2_1 = Longer Then 32 Char Category Name</p>
+                  <p> They will insert like this</p>
+                  <p> Small Category Name -&gt; <br>
+                    Longer Then 32 Char Category Nam -&gt; Product 1<br>
+                    Longer Then 32 Char Category Nam -&gt; Product 2<br>
+                    Longer Then 32 Char Category Nam -&gt; Product 3<br>
+                    Longer Then 32 Char Category Nam -&gt; Product 4<br>
+                    Longer Then 32 Char Category Nam -&gt; Product 5<br>
+                  </p>
+                  <p> But should look like this</p>
+                  <p> Small Category Name -&gt; <br>
+                    Longer Then 32 Char Category Name -&gt; Product 1<br>
+                    Product 2<br>
+                    Product 3<br>
+                    Product 4<br>
+                    Product 5</p>
+                  <p> You need to increase the number of characters the category name 
+                    will allow in the database. Open your database in a SQL management
+                    tool such as phpMyAdmin. Go to the categories_description table and
+                    look for the categories_name field.  Edit the field and increase the
+                  size to 64 or more if needed.</p>
+                  <p>&nbsp;</p>
+                  <h2>EasyPopulate creates a duplicate named category for every product! What now?</h2>
+                  <p> If easypopulate is creating multiple categories with one product each, and the<br>
+                    category names are truncated, then you have categories with more characters<br>
+                    the osCommerce allows. You need to increase the number of characters allowed<br>
+                    in your database.  Table: categories_description  Field: categories_name</p>
+                  <p><br>
+                  </p>
+                  <h2>I don’t see the Custom Export window, all I see is a tiny little box where is should be.</h2>
+                     <p>If you upload the fixed file from <font color="#990000"><b>/catalog/admin/includes/classes/table_block.php</b></font>. This should be fixed. If not you may want to try the following:&nbsp;<br>
+                    open: <b>/catalog/admin/includes/classes/table_block.php</b><br>
+                    <br>
+                    <b>find:</b><br>
+                    <i>if (isset($contents[$i][$x]['text']) &amp;&amp; tep_not_null(isset($contents[$i][$x]['text']))) {</i><br>
+                    <br>
+                    <b>replace line with this:</b><br>
+                    <i>if (isset($contents[$i][$x]['text']) &amp;&amp; tep_not_null($contents[$i][$x]['text'])) {</i><br>
+                    <br>
+                    <b>find:</b><br>
+                    <i>if (isset($contents[$i][$x]['params']) &amp;&amp; tep_not_null(isset($contents[$i][$x]['params']))) {</i><br>
+                    <br>
+                    <b>replace with:</b><br>
+                    <i>if (isset($contents[$i][$x]['params']) &amp;&amp; tep_not_null($contents[$i][$x]['params'])) {</i><br>
+                    </p>
+                    <br>
+
+
+                  <h2>I try to split a file but it leaves it in one big file, and says zero records were found.</h2>
+<p> Check to be sure that your data includes the 'EOREOR' at the end of every row.  EP starts reading the file and looks for this field in order to split it into rows.  If this field is missing, EP will never find the end of the row of data.<br>
+                  </p>
+                  <br>
+                  
+                  <h2>When I try to upload, I get an error message</h2>
+                  <p><b>Fatal error: Call to undefined function: tep_get_uploaded_file() in /home/www/web19/html/catalog/admin/easypopulate.php on line xxx</b><br>
+ The function isn't being found.  Did you copy the <b> easypopulate_functions.php</b> to the admin directory?&nbsp;<br>
+                  </p>
+                  <br>
+
+
+                  <h2>I upload a file but it just goes right back to the
+                  Easy Populate screen without doing anything.</h2>
+                    <p> Chances are your file is too large to import properly.  Either split it, or if it's already split, then set EP_SPLIT_MAX_RECORDS in easy populate to something smaller and try again.<br>
+                    </p>
+                  <br>
+
+
+                  <h2>The prices in the store are not what I put in the spreadsheet.</h2>
+<p> Check the EP_PRICE_WITH_TAX configuration constant in the configuration variables section.  Change it to the opposite of what it is (i.e if it's false, set true, if true, set to false), and re-import. This variable tells EP that the price includes the tax rate or not.<br>
+                  </p>
+                  <br>
+
+
+                  <h2>When I try to upload a file, I get warnings like this:</h2>
+                    <ul>
+                    <li><b> Warning: Unable to create '/home/html/mati/html/catalog/temp/nuevo.txt': No such file or directory in /home/html/mati/html/tienda/admin/includes/functions/general.php on line 789</b></li>
+                    <li><b> Warning: Unable to move '/tmp/phpz24pMf' to '/home/html/mati/html/catalog/temp/nuevo.txt' in /home/html/mati/html/tienda/admin/includes/functions/general.php on line 789</b><br>
+                    File uploaded. Temporary filename: /tmp/phpz24pMf&nbsp;<br>
+                    User filename: nuevo.txt<br>
+                    Size: 98039</li>
+                    <li><b> Warning: file(&quot;/home/html/mati/html/catalog/temp/nuevo.txt&quot;) - No such file or directory in /home/html/mati/html/tienda/admin/easypopulate.php on line 469</b></li>
+                    <li><b> Warning: Invalid argument supplied for foreach() in /home/html/mati/html/tienda/admin/easypopulate.php on line 473<br>
+                    Upload complete</b></li>
+                    </ul>
+                    
+                  <p><b>Answer:</b><br>
+ EP can't find the file that you uploaded for some reason. Check to see that you actually have a temp directory at the location shown.&nbsp;<br><br>
+ Does the settings section of the EP screen show it is writeable? Change the setting on the file to 744 (chmod 744 temp) on a *nix box, if that still doesn't work try 777. Directories should not be left at 777, is a potential security loophole. On Windows boxes ensure that IIS has write permission to that directory.&nbsp;<br><br>
+ If you do have a temp directory but it's not under&nbsp; the catalog directory, then you must go into easypopulate.php and set the EP_TEMP_DIRECTORY constant definition.<br>
+                  </p>
+                  <br>
+                  
+                  <h2>If you are doing the "Create txt in temp dir" option and you get errors like this:</h2>
+                    <p><b>Warning: fopen(&quot;/usr/local/plesk/apache/vhosts/yourdomain.com/temp/EP1038000963.csv&quot;, "w+")&nbsp;<br>
+                    - No such file or directory in /usr/local/plesk/apache/vhosts/yourdomain/httpsdocs/admin/easypopulate.php on line 273</b><br>
+                    <br>
+                    You have one of two problems:</p>
+                  <ul>
+                    <li> The permissions are not set correctly for your temp directory,
+                      CHmod the &quot;temp&quot; directory to 777, verify by using Tools->Files and go to the temp directory, the perms should read like this
+                      &quot;drwxrwxrwx&quot;</li>
+                    <li> The temp dir path is wrong. First, check the path that you see in Tools->Files. Now compare that to the path in the error message. If they are not the same, edit the EP_TEMP_DIRECTORY constant definition near the top so they will match.</li>
+                  </ul>
+
+                  <br>
+                  <h2>About Special Characters</h2>
+                  <p>
+                  Special characters should be handled OK by Easy Populate, but it is recommended to use the special
+                  control characters as there are some parts of osC that may not properly strip slashes from the data
+                  if you use the special character instead of the control codes. Try the Excel Safe Output feature if
+                  you haven't already.</p>
+                  
+                  <br>
+                  <h2>Windows users</h2>                  
+                  If you have trouble downloading and opening the file, try downloading the file.<br>
+                  If you encounter errors here trying to dl the file, try using the "Create txt in temp dir" link.  This
+                  will create a file in the /catalog/temp directory, which you can get to via the Tools/Files in the
+                  admin area, and download it there.<br>
+                  <br>
+                  If you still have problems at that point, well, there's always ftp.  I've beaten my head against this wall too much,
+                  and dammed if I'm going to spend more time fussing with a busted browser on a
+                  busted 'operating system'.  Bill Gates has stolen enough of my life as it is.  Get Mozilla.  It works.<br>
+                  <br>
+                  It's possible this problem is related to sites that have their admin on the https side.<br>
+                  
+                  <br>
+                  <br>
+                  <h2>If your problem is not described above and your still having problems?</h2>                  
+                  See this section: <a href="#ask_a_question">How to ask for help.</a>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </td>
+              </tr>
+              <tr>
+                <td><h1>Froogle Help<a name=froogle>&nbsp;</a></h1>
+                  <p style="color:#FF0000;">Please Note: This functionality is not up-to-date. This function may be better served with a shopping site feed contribution that is being maintained.</p>
+                  Easy Populate supports the basic froogle format.  You'll need to
+                  contact Goggle to set up your froogle account.  You'll also need
+                  to rename the output file as required by goggle<br>
+                  <br>
+                  <a href="http://google.com/base/help/overview.html" target="_blank">http://google.com/base/help/overview.html</a><br>
+                  <a href="http://google.com/base/products.html" target="_blank">http://google.com/base/products.html</a><br>
+                  <br>
+                  Froogle downloads will include the specials price if one is set
+                  and active and applies to today.<br>
+                  <br>
+                  FROOGLE CONFIGURATION<br>
+                  -----------------------------------<br>
+                  To support the froogle export format, you must configure two configuration variables which should not need changing:<br>
+                  <br>
+                  The following should be set to the full address that an external
+                  person would have to type into their browser to go directly to your
+                  product info page.  Simplest way to set this is to go look at a product in your store with your browser, then copy/paste the
+                  url, and chop off everything after '<b>product_info.php</b>'. (should not need changing)<br>
+                  <br>
+                  <b>  define ('EP_FROOGLE_PRODUCT_INFO_PATH', HTTP_CATALOG_SERVER . DIR_WS_CATALOG . "product_info.php");</b><br>
+                  <br>
+                  The following should be set to the full address to your images
+                  directory, with the trailing slash. (Again, should not need changing)<br>
+                  <br>
+                  <b>  define ('EP_FROOGLE_IMAGE_PATH', HTTP_CATALOG_SERVER . DIR_WS_CATALOG_IMAGES);</b><br>
+                  <br>
+                  Once you've set these, test by doing a froogle export, and copy/paste the
+                  product_info url into your browser.  Do the same for the image.
+                  Troubleshoot until this works as expected.
+                  
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  </td>
+              </tr>
+              <tr>
+                <td><h1>Extra Fields Contribution<a name=extra_field>&nbsp;</a></h1>
+                  (Please ignore if you do not have this contribution installed)<br>
+                  --------------------------------------<br>
+                  There is no option to download product options using EP. To use EP to add and maintain Extra Fields create a file with the following columns.<br>
+                  <br>
+                  '<b>v_products_model</b>' The model number for the product. You must add this to each line and
+                  all <b> v_products_model</b> must be unique.<br>
+                  '<b>v_products_extra_fields_name</b>' Case sensitive name of the extra Field. Must be exactly the same as the name of the extra field in the admin area.<br>
+                  '<b>v_products_extra_fields_id</b>' This is the tricky one, it is the
+                  extra fields ID. You will probably need to use PHPMyAdmin to find out what it is.<br>
+                  '<b>v_products_extra_fields_value</b>' The value you want for the extra field.<br>
+                  <br>
+                  For example, to add information for two extra fields, one called
+                  &quot;<b>List Price</b>&quot; and the other &quot;<b>Our Part
+                  No</b>&quot; you need a file in this format<br>
+                  <br>
+<textarea cols="80" rows="4">v_products_model,v_products_extra_fields_name,v_products_extra_fields_id,v_products_extra_fields_value,EOREOR
+12UCM,List Price,1,£79.00,EOREOR
+XVZ201E,Our Part No,2,SHAXVZ201E,EOREOR</textarea>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+                </td>
+              </tr>
+              <tr>
+                <td><h1>Additional Images Contribution<a name=add_images>&nbsp;</a></h1>
+                    (Please ignore if you do not have this contribution installed)<br>
+                    --------------------------------------<br>
+                    <a href="http://addons.oscommerce.com/info/1032" target="_blank">http://addons.oscommerce.com/info/1032</a><br>
+                    --------------------------------------<br><br>
+                    Easy Populate will export the large image file name.<br><br>
+                    Upon import, Easy Populate will be expecting the filename specified to be
+                    the large image. It will place the filename in the thumbnail image location 
+                    (this is the original image location used by osCommerce for the main image)
+                    and clear the other image sizes. This allows you to use the Additional Images utility
+                    to process the new images for the other images sizes.<br><br>
+                    if you are exporting data to change the prices or the description of a product,
+                    do yourself a favor and don't export the additional images names. You will save
+                    yourself trouble in the end. Otherwise, you'll need to reprocess the images sizes again.
+                    <br>
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+
+                </td>
+              </tr>
+<tr>
+                <td><h1>Master Product Contribution<a name=master_products>&nbsp;</a></h1>
+                    (Please ignore if you do not have this contribution installed)<br>
+                    --------------------------------------<br>
+                    <a href="http://addons.oscommerce.com/info/7738" target="_blank">http://addons.oscommerce.com/info/7738</a><br>
+                    --------------------------------------<br><br>
+                    Easy Populate will export-import master products data.<br><br>
+                    <br>
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+
+                </td>
+              </tr>
+            </table>
+           </td>
+        </tr>
+        <tr>
+            <td class="sectionheadTD">How to Get Help<a name="ask_a_question">&nbsp;</a></td>
+        </tr>
+        <tr>
+          <td valign="top" align="center">
+            <table class="inner" border="0" cellpadding="2" cellspacing="0">
+              <tr>
+                <td><br><p>
+                  If you don't understand what a setting is or does, please ask.</p>
+                  <p>Remember that this was written by volunteers. If you have questions, post in the
+                    forums. <span class="style1">Please don't e-mail any of the authors involved</span> since they may not be supporting
+                  the script any longer.  Lives change and people contribute and move on :)</p>
+                  <p>Before you ask a question,  find your answer yourself:</p>
+                  <ul>
+                    <li><span class="style1"><strong>Please, please,
+                  read the entire docs</strong></span><strong>.</strong></li>
+                    <li>Search the support thread <i>(lower left of the support thread page)</i> and read through a few pages of the search results for your problem.</li>
+                    <li>Read  at least the last 4-5 pages of the support topic (link is below).</li>
+                    <li>Goggle your problem. e.g. in Goggle enter<span class="style2"><b> extra fields</b> <b>site:forums.oscommerce.com</b></span><br>
+                    </li>
+                  </ul>
+                  <p>Only after that, should you ask for help with an error or problem
+                  using this contribution.  Volunteers' time is just as valuable as yours. (please make a little effort)                   </p>
+                  </p>
+                  <br>
+                  <h2>How to ask for help</h2>
+                    
+                    <p>Please gather information we need to help you:</p>
+                    <ol>
+                    <li>Edit easypopulate.php and ensure EP_SHOW_EP_SETTINGS is set to true, then copy the   settings &amp; server info that are displayed on the EP main page into your post.</li>
+                    <li>Include the type of operating system and software you are using to edit
+the datafile. <br>
+(Windows, MAC, Linux) / (Excel, Open Office, etc.)<br>
+                    </li>
+                    <li>Copy of any error message you are receiving or description of problem if
+no error.<br>
+                    </li>
+                    <li>If it is a <u>upload problem</u>, post a link to a sample of any upload file you are trying. <br>
+                      If it is a <u>download problem</u>, post a link to the file EP is producing. <br>
+                        <span class="style1">** Please avoid posting the sample data since the forum may modify it:                        </span><br style="line-height:4px;">
+This is easy to do. Simply FTP all or a portion of your import file to the root of your shop's hosting space (remember, no spaces in the file name.  Then post a link to the file like this: http://www.myshop.com/shop/mycsv.csv. After someone has responded, you can remove it.<br style="line-height:4px;">
+                    </li>
+                    <li>Post all the info and your  problem description in the support thread: <a href="http://forums.oscommerce.com/index.php?showtopic=162244" target="_blank">http://forums.oscommerce.com/index.php?showtopic=162244</a><br>
+                    </li>
+                  </ol>
+                  <br>
+                  You won't be saving anyone time by avoiding this plea. Thanks for helping us help you !!                  </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

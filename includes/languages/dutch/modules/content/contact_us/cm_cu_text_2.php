@@ -1,0 +1,23 @@
+<?php
+/*  $Id: text_main.php v1.0 20101109 Kymation $
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+  Copyright (c) 2010 osCommerce
+  Released under the GNU General Public License
+*/
+  define( 'MODULE_CONTENT_CONTACT_US_TEXT_2_TITLE', 'Contact Pagina Tekst nummer 2' );
+  define( 'MODULE_CONTENT_CONTACT_US_TEXT_2_DESCRIPTION', 'Instellingen van de Tekst nummer 2  module op de Contact pagina.' );
+
+  define('TITLE_MODULE_CONTENT_CONTACT_US_TEXT_2_STATUS', _MODULES_ACTIVATE_STATUS . ' ' . MODULE_CONTENT_CONTACT_US_TEXT_2_TITLE ) ;
+  define('DESCRIPTION_MODULE_CONTENT_CONTACT_US_TEXT_2_STATUS', _MODULES_ACTIVATE_STATUS_DESCRIPTION ) ;  
+  
+  define('TITLE_MODULE_CONTENT_CONTACT_US_TEXT_2_SORT_ORDER', _MODULES_SORT_ORDER . MODULE_CONTENT_CONTACT_US_TEXT_2_TITLE ) ;
+  define('DESCRIPTION_MODULE_CONTENT_CONTACT_US_TEXT_2_SORT_ORDER', _MODULES_SORT_ORDER_DESCRIPTION ) ;  
+  
+  define('TITLE_MODULE_CONTENT_CONTACT_US_TEXT_2_DUTCH', 'Nederlandse Tekst ' . MODULE_CONTENT_CONTACT_US_TEXT_2_TITLE ) ; 
+  define('DESCRIPTION_MODULE_CONTENT_CONTACT_US_TEXT_2_DUTCH', 'Voer de Nederlandse Tekst in welke wordt getoond in de box ' . MODULE_CONTENT_CONTACT_US_TEXT_2_TITLE . ' op de start pagina ') ;   
+  
+  define('TITLE_MODULE_CONTENT_CONTACT_US_TEXT_2_CONTENT_WIDTH', _MODULES_QNT_COLUMN_BOOTSTRAP ) ;
+  define('DESCRIPTION_MODULE_CONTENT_CONTACT_US_TEXT_2_CONTENT_WIDTH', _MODULES_QNT_COLUMN_BOOTSTRAP_DESCRIPTION ) ;      
+
+?>

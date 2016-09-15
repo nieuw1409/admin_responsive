@@ -1,0 +1,89 @@
+/*
+  $Id stylesheet.css v1.0 20101111 Kymation $
+  Loc: catalog/ext/modules/front_page/banner_rotator/ $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2010 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+
+/*
+ * These styles affect the banner rotator module.
+ *
+ * Banner size is set in two different places: #bannerRotator and #bannerRotator ul li.
+ *   Both sizes must match.
+ *
+ * The control images are in catalog/images/icons/
+ *   The dimensions set below for the icons must be changed if you change to images
+ *   with different sizes.
+ *
+ */
+#bannerRotator {
+  margin-top:5px;
+  width: 630px;  /* Banner width + 10 */
+  height: 150px;  /* Banner height */
+  overflow: hidden;
+  position: relative;
+}
+
+#bannerRotator ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+#bannerRotator ul li {
+  display: none;
+  margin: 0 auto;
+  width: 620px;  /* Banner width */
+  height: 150px;  /* Banner height */
+/*  position: absolute;
+  top: 0px;
+  left: 0px; */
+}
+
+#bannerNav {
+  position: absolute;
+  right: 15px;  /* Distance from the right side of the controls box to the right edge of the banner */
+  bottom: 15px;  /* Distance from the bottom of the controls box to the bottom of the banner */
+  background: url(../../../../images/icons/transBlack75.png) repeat 0 0;  /* Controls box background image */
+  padding: 5px 5px 5px 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+#bannerNav a {
+  margin: 3px 10px 0 0 ;
+  height: 10px;
+  width: 10px;
+  display: block;
+  background: url(../../../../images/icons/dotDark.png) no-repeat 0 0;  /* Controls Button image (Inactive) */
+  float: left;
+}
+
+#bannerNav a.active {
+  background-image: url(../../../../images/icons/dotLight.png);  /* Controls Button image (Active) */
+}
+
+#bannerNav span.pause, #bannerNav span.play {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  display: block;
+  background: url(../../../../images/icons/pause.png) no-repeat 0 0;  /* Controls Pause icon */
+  float: left;
+}
+
+#bannerNav span.play {
+  background-image: url(../../../../images/icons/play.png);  /* Controls Play icon */
+}
+
+.divider-tall {
+  clear: both;
+  height: 13px;
+}
+/* End Banner Rotator */

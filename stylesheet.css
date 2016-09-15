@@ -1,0 +1,143 @@
+.ui-widget{font-family:Lucida Grande, Lucida Sans, Verdana, Arial, sans-serif;font-size:11px;}
+body{background:#fff;color:#000;margin:0px;font-size:11px;font-family:Lucida Grande, Lucida Sans, Verdana, Arial, sans-serif;}
+#bodyWrapper{}
+#bodyContent{}
+#header{100%;}
+#storeLogo{float:left;margin-top:5px;}
+#headerShortcuts{float:right;margin-top:15px;}
+#columnLeft{padding-top:5px;}
+#columnRight{padding-top:5px;}
+.infoBoxContainer{}
+.infoBoxHeading{padding:2px;font-size:11px;}
+.infoBoxContents{padding:5px;font-size:11px;line-height:1.5;}
+.contentContainer{padding-bottom:10px;}
+.contentContainer h2{font-size:16px;text-decoration:underline;font-weight:normal;margin-bottom:0;padding-bottom:5px;}
+.contentText, .contentText table{padding:5px 0 5px 0;font-size:11px;line-height:1.5;}
+.productListTable tr.alt td{background-color:#ecf6fc;}
+.fieldKey{font-size:11px;font-weight:bold;line-height:1.5;width:150px;}
+.fieldValue{font-size:11px;line-height:1.5;}
+h1{font-size:20px;margin-bottom:0;padding-bottom:5px;}
+img{border:0;}
+table, p{font-size:11px;line-height:1.5;}
+.buttonSet{clear:both;}
+.buttonAction{float:left;}
+.boxText{font-family:Verdana, Arial, sans-serif;font-size:10px;}
+.errorBox{font-family:Verdana, Arial, sans-serif;font-size:10px;background:#ffb3b5;font-weight:bold;}
+.stockWarning{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#cc0033;}
+.productsNotifications{background:#f2fff7;}
+.orderEdit{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#70d250;text-decoration:underline;}
+A{color:#000000;text-decoration:none;}
+A:hover{text-decoration:underline;}
+FORM{display:inline;}
+TR.header{background:#ffffff;}
+TR.headerNavigation{background:#bbc3d3;}
+TD.headerNavigation{font-family:Verdana, Arial, sans-serif;font-size:10px;background:#bbc3d3;color:#ffffff;font-weight:bold;}
+A.headerNavigation{color:#FFFFFF;}
+A.headerNavigation:hover{color:#ffffff;}
+TR.headerError{background:#ff0000;}
+TD.headerError{font-family:Tahoma, Verdana, Arial, sans-serif;font-size:12px;background:#ff0000;color:#ffffff;font-weight:bold;text-align:center;}
+TR.headerInfo{background:#00ff00;}
+TD.headerInfo{font-family:Tahoma, Verdana, Arial, sans-serif;font-size:12px;background:#00ff00;color:#ffffff;font-weight:bold;text-align:center;}
+TR.footer{background:#bbc3d3;}
+TD.footer{font-family:Verdana, Arial, sans-serif;font-size:10px;background:#bbc3d3;color:#ffffff;font-weight:bold;}
+.infoBox{background:#b6b7cb;}
+.infoBoxNotice{background:#FF8E90;}
+.infoBoxNoticeContents{background:#FFE6E6;font-family:Verdana, Arial, sans-serif;font-size:10px;}
+TD.infoBoxHeading{font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:bold;background:#bbc3d3;color:#ffffff;}
+TD.infoBox, SPAN.infoBox{font-family:Verdana, Arial, sans-serif;font-size:10px;}
+TR.accountHistory-odd, TR.addressBook-odd, TR.alsoPurchased-odd, TR.payment-odd, TR.productListing-odd, TR.productReviews-odd, TR.upcomingProducts-odd, TR.shippingOptions-odd{background:#f8f8f9;}
+TR.accountHistory-even, TR.addressBook-even, TR.alsoPurchased-even, TR.payment-even, TR.productListing-even, TR.productReviews-even, TR.upcomingProducts-even, TR.shippingOptions-even{background:#f8f8f9;}
+TABLE.productListing{border:1px;border-style:solid;border-color:#b6b7cb;border-spacing:1px;}
+.productListingHeader{table-layout:fixed;color:#FFFFFF;font-weight:bold;}
+.productListingHeader A:hover{color:#FFFFFF;}
+.productListingData{table-layout:fixed;}
+A.pageResults{color:#0000FF;}
+A.pageResults:hover{color:#0000FF;background:#FFFF33;}
+TD.pageHeading, DIV.pageHeading{font-family:Verdana, Arial, sans-serif;font-size:20px;font-weight:bold;color:#9a9a9a;}
+TR.subBar{background:#f4f7fd;}
+TD.subBar{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#000000;}
+TD.main, P.main{font-family:Verdana, Arial, sans-serif;font-size:11px;line-height:1.5;}
+TD.smallText, SPAN.smallText, P.smallText{font-family:Verdana, Arial, sans-serif;font-size:10px;}
+TD.accountCategory{font-family:Verdana, Arial, sans-serif;font-size:13px;color:#aabbdd;}
+TD.tableHeading{font-family:Verdana, Arial, sans-serif;font-size:12px;font-weight:bold;}
+SPAN.newItemInCart{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#ff0000;}
+CHECKBOX, INPUT, RADIO, SELECT{font-family:Verdana, Arial, sans-serif;font-size:11px;}
+TEXTAREA{width:100%;font-family:Verdana, Arial, sans-serif;font-size:11px;}
+SPAN.greetUser{font-family:Verdana, Arial, sans-serif;font-size:12px;color:#f0a480;font-weight:bold;}
+TABLE.formArea{background:#f1f9fe;border-color:#7b9ebd;border-style:solid;border-width:1px;}
+TD.formAreaTitle{font-family:Tahoma, Verdana, Arial, sans-serif;font-size:12px;font-weight:bold;}
+SPAN.markProductOutOfStock{font-family:Tahoma, Verdana, Arial, sans-serif;font-size:12px;color:#c76170;font-weight:bold;}
+SPAN.productSpecialPrice{font-family:Verdana, Arial, sans-serif;color:#ff0000;}
+SPAN.errorText{font-family:Verdana, Arial, sans-serif;color:#ff0000;}
+.moduleRow{}
+.moduleRowOver{background-color:#D7E9F7;cursor:pointer;cursor:hand;}
+.moduleRowSelected{background-color:#E9F4FC;}
+.checkoutBarFrom, .checkoutBarTo{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#8c8c8c;}
+.checkoutBarCurrent{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#000000;}
+.messageBox{font-family:Verdana, Arial, sans-serif;font-size:10px;}
+.messageStackError, .messageStackWarning{font-family:Verdana, Arial, sans-serif;font-size:10px;background-color:#ffb3b5;}
+.messageStackSuccess{font-family:Verdana, Arial, sans-serif;font-size:10px;background-color:#99ff00;}
+.inputRequirement{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#ff0000;}
+.tdbLink a{}
+.tdbLink button{}
+.accountLinkList{list-style-type:none;margin:2px 2px 2px 10px;padding:5px;}
+.accountLinkListEntry{float:left;margin-right:5px;}
+ul.column{width:100%;padding:0;margin:0px 0;list-style:none;}
+ul.column li{float:left;width:210px;padding:0;margin:5px 0;display:inline;}
+.block{height:290px;font-size:1em;margin-left:5px;margin-right:5px;padding:5px;background:#fff;border:1px solid #000000;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.block h2{font-size:1.8em;}
+.block img{padding:5%;background:#fff;margin:0 auto;display:block;-ms-interpolation-mode:bicubic;}
+UL.BrowseBy{list-style-type:disc;list-style-position:inside;list-style:none;margin-left:1em;padding-left:2em;text-indent:-1em;}
+LI.BrowseBy{}
+.ft1{font-size:10px;}
+.ft3{font-size:18px;}
+.password{}
+.pstrength-minchar{font-size:10px;color:#F00;}
+.pstrength-bar-cont{background-color:#CCC;height:7px;width:140px;margin-top:2px;}
+.pstrength-bar{height:7px;}
+.pstrength-info{font-size:10px;}
+.infoBoxProducts{background:#ffffff;}
+.infoBoxNotice{background:#FFFFFF;}
+.infoBoxNoticeContents{background:#FFFFFF;font-family:Verdana, Arial, sans-serif;font-size:10px;}
+TD.infoBoxHeading{font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:bold;color:#ffffff;}
+TABLE.productListing{border:1px;border-style:solid;border-color:#FFffff;border-spacing:1px;}
+.productListing-heading{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#FFFFFF;font-weight:bold;}
+div.eualDesc{float:left;width:300px;}
+.infoBoxProducts{text-align:center;border:2px solid #ccc;border-bottom:4px solid #fgfgfg;font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:normal;background-color:transparent;color:#333333;background-image:url(images/mypic.jpg);background-attachment:scroll;background-x-position:0%;background-y-position:0%;background-repeat:repeat-x;padding:10px 40px;}
+.infoBoxProducts a{color:#ccc;}
+.productDesc{font-family:Verdana, Arial, sans-serif;font-size:10px;color:#808080;padding:1px 7px 1px 7px;background-color:transparent;font-style:oblique;margin:1px 7px 1px 7px;}
+.productListing-name a, .productListing-name{font-family:Comic Sans MS,Verdana, Arial, sans-serif;font-size:12px;color:#ffffff;font-weight:bold;padding-bottom:6px;}
+.progress{width:1px;height:12px;color:grey;font-size:10px;background-color:#bbc3d3;padding-left:5px;}
+.bar{border-style:solid;border-width:1px;border-color:#bbc3d3;}
+div#ImagePreload{display:none;}
+.description{align:left;valign:top;height:100px;min-height:100px;}
+.startlayer{background:none repeat scroll 0 0 rgba(245, 245, 245, 0.5);color:#CCCCCC;height:100%;left:0;position:fixed;text-align:center;top:0;width:100%;z-index:5000;}
+.containerbox p{color:#212121;font-size:14px;line-height:20px;}
+#maintable, #maintable tr, #maintable td{border:0 none;height:100%;margin:0 auto;}
+#layerbox{background:none repeat scroll 0 0 rgba(207, 231, 247, 0.8);border:solid 1px #b5dd7;margin:auto 20%;padding:35px;text-align:center;}
+@media only screen and (max-width:480px){#layerbox{background:none repeat scroll 0 0 rgba(207, 231, 247, 0.8);border:solid 1px #b5dd7;margin:auto 0;padding:35px;text-align:center;}
+}
+h1{font-family:Verdana, Arial, sans-serif;font-size:20px;font-weight:700;margin-top:30px;margin-bottom:0;padding-bottom:0;color:#9a9a9a}
+h2{font-family:Verdana, Arial, sans-serif;font-size:14px;font-weight:400;text-align:left;margin-top:20px;margin-bottom:20px;padding-top:15px;padding-bottom:15px;color:#9a9a9a}
+#hts_viewing{font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:400;margin-bottom:0;color:#9a9a9a;padding:6px 5px;text-align:center}
+#hts_viewing a{color:#9a9a9a;}
+.hts_listing_text{font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:400;margin-bottom:0;color:#9a9a9a;padding:6px 5px}
+.hts_sub_text{font-family:Verdana, Arial, sans-serif;font-size:10px;font-weight:400;margin-bottom:0;color:#9a9a9a;padding:10px 0}
+.hts_bookmarks{padding:10px 0}
+#tagcloud{color:#06F;text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:10px}
+#tagcloud a:link,#tagcloud a:visited{text-decoration:none;color:#333}
+#tagcloud a:hover{text-decoration:underline}
+#tagcloud span{padding:4px}
+#tagcloud .smallest{font-size:x-small}
+#tagcloud .small{font-size:small}
+#tagcloud .medium{font-size:medium}
+#tagcloud .large{font-size:large}
+#tagcloud .largest{font-size:larger}
+#piGal {
+float: right;
+width: 250px;
+}
+#piGal img {
+max-width: 250px;
+height: 300px;
+}

@@ -1,0 +1,30 @@
+<?php
+/*
+  $Id$
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2014 osCommerce
+
+  Released under the GNU General Public License
+*/
+
+  define('MODULE_CONTENT_SC_CHECKOUT_ALT_TITLE', 'Alternatieve Checkout');
+  define('MODULE_CONTENT_SC_CHECKOUT_ALT_DESCRIPTION', 'Plaats de Alternatieve Checkoutbox op het scherm in de Winkelwagen pagina');
+  
+  define('TEXT_ALTERNATIVE_CHECKOUT_METHODS', '- OF -');
+  
+  define('TITLE_MODULE_CONTENT_SC_CHECKOUT_ALT_STATUS', _MODULES_ACTIVATE_STATUS . ' ' . MODULE_CONTENT_SC_CHECKOUT_ALT_TITLE ) ;
+  define('DESCRIPTION_MODULE_CONTENT_SC_CHECKOUT_ALT_STATUS', _MODULES_ACTIVATE_STATUS_DESCRIPTION ) ;  
+  
+  define('TITLE_MODULE_CONTENT_SC_CHECKOUT_ALT_SORT_ORDER', _MODULES_SORT_ORDER . MODULE_CONTENT_SC_CHECKOUT_ALT_TITLE ) ;
+  define('DESCRIPTION_MODULE_CONTENT_SC_CHECKOUT_ALT_SORT_ORDER', _MODULES_SORT_ORDER_DESCRIPTION ) ;    
+
+  define('TITLE_MODULE_CONTENT_SC_CHECKOUT_ALT_TEXT_POSITION', 'De positie van de alternatieve tekst' ) ;
+  define('DESCRIPTION_MODULE_CONTENT_SC_CHECKOUT_ALT_TEXT_POSITION', 'De positie van de alternatieve tekst relatief tot de button' ) ;  
+
+  define('TITLE_MODULE_CONTENT_SC_CHECKOUT_ALT_CONTENT_WIDTH', _MODULES_QNT_COLUMN_BOOTSTRAP ) ;
+  define('DESCRIPTION_MODULE_CONTENT_SC_CHECKOUT_ALT_CONTENT_WIDTH', _MODULES_QNT_COLUMN_BOOTSTRAP_DESCRIPTION ) ;  
+    
+?>

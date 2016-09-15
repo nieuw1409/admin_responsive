@@ -1,0 +1,73 @@
+<?php
+/*
+  $Id: database_optimizer_cron.php,v 1.0 2011/02/02
+  database_optimizer_cron.php Originally Created by: Jack_mcs - http://www.oscommerce-solution.com
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2003 osCommerce
+  Portions Copyright 2011 oscommerce-solution.com
+
+  Released under the GNU General Public License
+*/
+
+define('HEADING_TITLE', 'Database Optimizer');
+define('HEADING_TITLE_AUTHOR', 'by Jack_mcs from <a href="http://www.oscommerce-solution.com/" target="_blank"><span style="font-family: Verdana, Arial, sans-serif; color: sienna; font-size: 12px;">oscommerce-solution.com</span></a>');
+define('HEADING_TITLE_SUPPORT_THREAD', '<a href="http://forums.oscommerce.com/topic/370724-database-optimizer/" target="_blank"><span style="color: sienna;">(visit the support thread)</span></a>');
+define('TEXT_MISSING_VERSION_CHECKER', 'Version Checker is not installed. See <a href="http://addons.oscommerce.com/info/7819" target="_blank">here</a> for details.');
+define('TEXT_HELP', '
+<div style="position:relative; margin-left:auto; margin-right:auto; width:90%;">
+  <div class="section_row shadow" style="position:absolute; left:-180px; top:-28px">
+    <div class="section_column"><a href="javascript:void(null);" onclick="showHelp(\'' .tep_href_link("database_optimizer_help.php", "file=need_help") . '\');" title="Need Help?">Instructions</a></div>
+  </div>
+  <div class="section_row shadow" style="position:absolute; left:-40px; top:-28px">
+    <div class="section_column"><a href="javascript:void(null);" onclick="showHelp(\'' .tep_href_link("database_optimizer_help.php", "file=need_install") . '\');" title="Need Installation Help?">Need An Addon?</a></div>
+  </div>  
+  <div class="section_row shadow" style="position:absolute; left:100px; top:-28px">
+    <div class="section_column"><a href="javascript:void(null);" onclick="showHelp(\'' .tep_href_link("database_optimizer_help.php", "file=need_host") . '\');" title="Need Host?">Need A Host?</a></div>
+  </div>
+</div>
+
+<div id="do_help" title="Database Optimizer Help" style="display: none;"></div> 
+'); 
+
+define('TEXT_DATABASE_OPTIMIZER', 'Selecteer 1 van onderstaande  opties en click op update om de geselecteerde actie uit te voeren. ');
+
+define('TEXT_DO_ANALYZE', 'Analiseer Bestanden');
+define('TEXT_DO_OPTIMIZE', 'Optimeer Bestande');
+define('TEXT_DO_CUSTOMERS', 'Verwijder Klanten Sessies');
+define('TEXT_DO_CUSTOMERS_OLD', 'Verwijder Oude Klanten');
+define('TEXT_DO_PRODUCT_NOTIFICATIONS', 'Verwijder Product Notifications');
+define('TEXT_DO_ORDERS_CC', 'Verwijder CC Nummers');
+define('TEXT_DO_ORPHAN_ADDR_BOOK', 'Verwijder Overbodige Adres Boek Gegevens');
+define('TEXT_DO_SESSIONS', 'Verwijder Sessies');
+define('TEXT_DO_USER_TRACKING', 'Verwijder Gebruikers Tracking');
+
+define('TEXT_EXPLAIN_ANALYZE', 'Cleans up the keys in the tables. Improves the speed of the database.');
+define('TEXT_EXPLAIN_OPTIMIZE', 'Defragments the database and reduces query times in some cases.');
+define('TEXT_EXPLAIN_CUSTOMERS', 'Removes entries from the customer basket and customer basket attributes tables based on the configuration setting.');
+define('TEXT_EXPLAIN_CUSTOMERS_OLD', '<span style="color:#dd0000;">Removes entries from the customers and address book tables based on the configuration setting and whether the customer has ever logged in.</span>');
+define('TEXT_EXPLAIN_PRODUCT_NOTIFICATIONS', 'Removes entries from the products notification table when the customer and/or product no longer exist.');
+define('TEXT_EXPLAIN_ORDERS_CC', '<span style="color:#dd0000;">Removes credit card numbers from the orders table based on the configuration setting.</span>');
+define('TEXT_EXPLAIN_ORPHAN_ADDR_BOOK', 'Removes entries from the address book table that are not related to a customer.');
+define('TEXT_EXPLAIN_SESSIONS', 'Removes entries from the sessions table based on the configuration setting.');
+define('TEXT_EXPLAIN_USER_TRACKING', 'Removes entries from the user tracking table based on the configuration setting (User Tracking must be installed).');
+
+$optionsArray = array(array('option' => TEXT_DO_ANALYZE, 'post' => (str_replace(" ", "_", TEXT_DO_ANALYZE)), 'explain' => TEXT_EXPLAIN_ANALYZE),
+                      array('option' => TEXT_DO_OPTIMIZE, 'post' => (str_replace(" ", "_", TEXT_DO_OPTIMIZE)), 'explain' => TEXT_EXPLAIN_OPTIMIZE),
+                      array('option' => TEXT_DO_CUSTOMERS, 'post' => (str_replace(" ", "_", TEXT_DO_CUSTOMERS)), 'explain' => TEXT_EXPLAIN_CUSTOMERS),
+                      array('option' => TEXT_DO_CUSTOMERS_OLD, 'post' => (str_replace(" ", "_", TEXT_DO_CUSTOMERS_OLD)), 'explain' => TEXT_EXPLAIN_CUSTOMERS_OLD),
+                      array('option' => TEXT_DO_PRODUCT_NOTIFICATIONS, 'post' => (str_replace(" ", "_", TEXT_DO_PRODUCT_NOTIFICATIONS)), 'explain' => TEXT_EXPLAIN_PRODUCT_NOTIFICATIONS),
+                      array('option' => TEXT_DO_ORDERS_CC, 'post' => (str_replace(" ", "_", TEXT_DO_ORDERS_CC)), 'explain' => TEXT_EXPLAIN_ORDERS_CC),
+                      array('option' => TEXT_DO_ORPHAN_ADDR_BOOK, 'post' => (str_replace(" ", "_", TEXT_DO_ORPHAN_ADDR_BOOK)), 'explain' => TEXT_EXPLAIN_ORPHAN_ADDR_BOOK),
+                      array('option' => TEXT_DO_SESSIONS, 'post' => (str_replace(" ", "_", TEXT_DO_SESSIONS)), 'explain' => TEXT_EXPLAIN_SESSIONS),
+                 );
+
+if (defined('TABLE_USER_TRACKING')) {
+    $optionsArray[] =  array('option' => TEXT_DO_USER_TRACKING, 'post' => (str_replace(" ", "_", TEXT_DO_USER_TRACKING)), 'explain' => TEXT_EXPLAIN_USER_TRACKING);
+}
+
+define('ERROR_DB_FAILURE', 'There is a problem with the database. This page will not work.');
+define('ERROR_FAILED_DB_CONNECTION', 'Failed to connect to the database');
+define('ERROR_NO_OPTION_SELECTED', 'At least one option must be selected');
+?>
