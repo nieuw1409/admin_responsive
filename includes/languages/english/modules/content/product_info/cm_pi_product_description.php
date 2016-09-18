@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_DESCRIPTION_TITLE', 'Product Info Description');
-  define('MODULE_CONTENT_PRODUCT_INFO_DESCRIPTION_DESCRIPTION', 'Show Product Description on the product info page.');
+  define('MODULE_CONTENT_PI_DESCRIPTION_TITLE', 'Product Info Description');
+  define('MODULE_CONTENT_PI_DESCRIPTION_DESCRIPTION', 'Show Product Description on the product info page.');
 
 ?>
