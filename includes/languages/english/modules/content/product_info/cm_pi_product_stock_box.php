@@ -5,7 +5,7 @@
   Copyright (c) 2014 osCommerce
   Released under the GNU General Public License
 */
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_STOCK_BOX_TITLE', 'Product Info Stock Box ' );
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_STOCK_BOX_DESCRIPTION', 'Show Product Stock Box on the product info page.');
+  define('MODULE_CONTENT_PI_PRODUCT_STOCK_BOX_TITLE', 'Product Info Stock Box ' );
+  define('MODULE_CONTENT_PI_PRODUCT_STOCK_BOX_DESCRIPTION', 'Show Product Stock Box on the product info page.');
 
 ?>
