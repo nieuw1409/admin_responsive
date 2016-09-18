@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_AVAILABILITY_TITLE', 'Product Info Availability');
-  define('MODULE_CONTENT_PRODUCT_INFO_AVAILABILITY_DESCRIPTION', 'Show Product Availability on the product info page.');
+  define('MODULE_CONTENT_PI_AVAILABILITY_TITLE', 'Product Info Availability');
+  define('MODULE_CONTENT_PI_AVAILABILITY_DESCRIPTION', 'Show Product Availability on the product info page.');
 
 ?>
