@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_PRICE_BOX_TITLE', 'Product Info Price Box');
-  define('MODULE_CONTENT_PRODUCT_INFO_PRICE_BOX_DESCRIPTION', 'Show Price Box block on the product info page.');
+  define('MODULE_CONTENT_PI_PRICE_BOX_TITLE', 'Product Info Price Box');
+  define('MODULE_CONTENT_PI_PRICE_BOX_DESCRIPTION', 'Show Price Box block on the product info page.');
 
 ?>
