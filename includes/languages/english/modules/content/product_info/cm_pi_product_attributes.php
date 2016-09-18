@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_ATTRIBUTES_TITLE', 'Product Info Attributes');
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_ATTRIBUTES_DESCRIPTION', 'Show Product Attributes on the product info page.');
+  define('MODULE_CONTENT_PI_PRODUCT_ATTRIBUTES_TITLE', 'Product Info Attributes');
+  define('MODULE_CONTENT_PI_PRODUCT_ATTRIBUTES_DESCRIPTION', 'Show Product Attributes on the product info page.');
 
 ?>
