@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_IMAGES_TITLE', 'Product Info Images');
-  define('MODULE_CONTENT_PRODUCT_INFO_IMAGES_DESCRIPTION', 'Show Product Images on the product info page.');
+  define('MODULE_CONTENT_PI_IMAGES_TITLE', 'Product Info Images');
+  define('MODULE_CONTENT_PI_IMAGES_DESCRIPTION', 'Show Product Images on the product info page.');
 
 ?>
