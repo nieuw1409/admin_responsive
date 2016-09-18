@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_META_FOOTER_TEXT_TITLE', 'Product Info Meta Footer Text');
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_META_FOOTER_TEXT_DESCRIPTION', 'Show Product Meta Footer Text on the product info page.');
+  define('MODULE_CONTENT_PI_PRODUCT_META_FOOTER_TEXT_TITLE', 'Product Info Meta Footer Text');
+  define('MODULE_CONTENT_PI_PRODUCT_META_FOOTER_TEXT_DESCRIPTION', 'Show Product Meta Footer Text on the product info page.');
 
 ?>
