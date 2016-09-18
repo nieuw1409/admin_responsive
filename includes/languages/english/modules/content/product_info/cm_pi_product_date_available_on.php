@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_DATE_AVAILABLE_ON_TITLE', 'Product Info Date Available On');
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_DATE_AVAILABLE_ON_DESCRIPTION', 'Show Product Date Available On on the product info page.');
+  define('MODULE_CONTENT_PI_PRODUCT_DATE_AVAILABLE_ON_TITLE', 'Product Info Date Available On');
+  define('MODULE_CONTENT_PI_PRODUCT_DATE_AVAILABLE_ON_DESCRIPTION', 'Show Product Date Available On on the product info page.');
 
 ?>
