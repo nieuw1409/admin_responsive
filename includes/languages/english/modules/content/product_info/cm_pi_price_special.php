@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_PRICE_SPECIAL_TITLE', 'Product Info Special Price');
-  define('MODULE_CONTENT_PRODUCT_INFO_PRICE_SPECIAL_DESCRIPTION', 'Show Special Price block on the product info page.');
+  define('MODULE_CONTENT_PI_PRICE_SPECIAL_TITLE', 'Product Info Special Price');
+  define('MODULE_CONTENT_PI_PRICE_SPECIAL_DESCRIPTION', 'Show Special Price block on the product info page.');
 
 ?>
