@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_BUTTON_REVIEW_TITLE', 'Product Info Reviews Button');
-  define('MODULE_CONTENT_PRODUCT_INFO_BUTTON_REVIEW_DESCRIPTION', 'Show Product Reviews Button on the product info page.');
+  define('MODULE_CONTENT_PI_BUTTON_REVIEW_TITLE', 'Product Info Reviews Button');
+  define('MODULE_CONTENT_PI_BUTTON_REVIEW_DESCRIPTION', 'Show Product Reviews Button on the product info page.');
 
 ?>
