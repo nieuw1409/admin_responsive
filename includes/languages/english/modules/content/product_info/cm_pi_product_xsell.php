@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_XSELL_TITLE', 'Product Info Xsell Box');
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_XSELL_DESCRIPTION', 'Show Product Xsell Box on the product info page.');
+  define('MODULE_CONTENT_PI_PRODUCT_XSELL_TITLE', 'Product Info Xsell Box');
+  define('MODULE_CONTENT_PI_PRODUCT_XSELL_DESCRIPTION', 'Show Product Xsell Box on the product info page.');
 
 ?>
