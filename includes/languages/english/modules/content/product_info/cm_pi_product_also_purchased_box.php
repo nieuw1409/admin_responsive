@@ -6,7 +6,7 @@
   Released under the GNU General Public License
 */
 
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_ALSO_PURCHASED_TITLE', 'Product Info Also Purchased Box ' );
-  define('MODULE_CONTENT_PRODUCT_INFO_PRODUCT_ALSO_PURCHASED_DESCRIPTION', 'Show Product Also Purchased Box on the product info page.');
+  define('MODULE_CONTENT_PI_PRODUCT_ALSO_PURCHASED_TITLE', 'Product Info Also Purchased Box ' );
+  define('MODULE_CONTENT_PI_PRODUCT_ALSO_PURCHASED_DESCRIPTION', 'Show Product Also Purchased Box on the product info page.');
 
 ?>
