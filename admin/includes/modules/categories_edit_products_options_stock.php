@@ -1,6 +1,6 @@
 <?php
 
-define( 'MAX_ROW_LISTS_OPTIONS', 2) ;
+define( 'MAX_ROW_LISTS_OPTIONS', 10) ;
 
 		$q=tep_db_query("select products_name,products_options_name as _option,products_attributes.options_id as _option_id,products_options_values_name as _value,products_attributes.options_values_id as _value_id from ".
 						  "products_description, products_attributes,products_options,products_options_values where ".
